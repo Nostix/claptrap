@@ -34,7 +34,7 @@
             <div class="form-group">
               <input type="password" placeholder="Password" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
+            <button type="submit" class="btn btn-success">Login</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -45,51 +45,45 @@
       <div class="container">
         <h1 class="mainheader">Claptrap</h1>
         <p class="mainheader">Das Trapfestival des Nordens. Lass dir das nicht entgehen! Und sichere dir deine Teilnahme. Immer nach dem Motto: Untz Untz Wup Wup</p>
-        <p class="mainheader"><a class="btn btn-primary btn-lg" href="#" role="button">Jetzt Karten bestellen &raquo;</a></p>
+        <p class="mainheader"><a class="btn btn-danger btn-lg" href="#" role="button">Jetzt Karten bestellen &raquo;</a></p>
       </div>
     </div>
     
-    
-    
-    
-<div class="section-white">
-  <div class="container frontimages">
+    <div class="section-white">
+        <div class="container frontimages">
 
-    <div id="frontimages" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#frontimages" data-slide-to="0" class="active"></li>
-        <li data-target="#frontimages" data-slide-to="1"></li>
-        <li data-target="#frontimages" data-slide-to="2"></li>
-      </ol>
+            <div id="frontimages" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#frontimages" data-slide-to="0" class="active"></li>
+                    <li data-target="#frontimages" data-slide-to="1"></li>
+                    <li data-target="#frontimages" data-slide-to="2"></li>
+                </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/1.jpg" alt="...">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/2.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="img/3.jpg" alt="...">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#frontimages" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#frontimages" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
         </div>
-        <div class="item">
-          <img src="img/2.jpg" alt="...">
-        </div>
-        <div class="item">
-          <img src="img/3.jpg" alt="...">
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#frontimages" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#frontimages" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-    </div>
-
-  </div>
-</section>
-    
-    
-    
+    </section>
 
     <div class="container">
       <!-- Example row of columns -->
@@ -110,6 +104,8 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+      
+      <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
       <hr>
 
@@ -120,5 +116,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
