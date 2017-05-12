@@ -1,22 +1,14 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-image: url("../img/bg.jpg");
+}
+
+.mainheader {
+  text-align: center;
+}
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.jumbotron {
+  background: none;
+}
