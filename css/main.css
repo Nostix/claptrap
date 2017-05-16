@@ -4,6 +4,7 @@ body {
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
+  
 }
 
 .mainheader {
@@ -13,6 +14,8 @@ body {
 
 .jumbotron {
   background: none;
+  position: relative;
+  height: 100vh;
 }
 
 .back-to-top {
@@ -33,6 +36,25 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+	font-size: 32px;
+}
+
+.btn-outlined.btn-danger {
+    background: none;
+    border: 3px solid #d9534f;
+    color: #d9534f;
+}
+.btn-outlined.btn-danger:hover,
+.btn-outlined.btn-danger:active {
+    color: #FFF;
+    background: #d2322d;
 }
 
 /* ------------------- Carousel Styling ------------------- */
