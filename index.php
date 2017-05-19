@@ -131,9 +131,14 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+
+      
+      <!--####### Footer ######-->
       
       <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
+
+<!--####### Footer ######-->
       <hr>
 
       <footer>
