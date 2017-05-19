@@ -49,6 +49,7 @@
       </div>
     </nav>
 
+    <div class="container" style="margin-top:20px;">
     <?php
         if(isset($_GET['nda'])) {
             echo '<div class="alert alert-danger" role="alert"><strong>Direct access denied!</strong> The Page you requested is not allowed to be accessed directly.</div>';
@@ -64,6 +65,7 @@
           unset($_SESSION['setupdone']);
         }
     ?>
+    </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">

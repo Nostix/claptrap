@@ -41,6 +41,49 @@
     </nav>
 
     <div class="container">
+
+    <div class="panel panel-primary panel-transparent">
+      <div class="panel-heading">
+        <h3 class="panel-title">Tickets bestellen</h3>
+      </div>
+      <div class="panel-body">
+        <form action="index.php?register" method="post">
+          <div class="form-group">
+          <br>
+          <table style="width:100%;">
+            <tr>
+              <td>
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" style="max-width:50%"><br>
+                <label for="lastname">Nachname</label>
+                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nachname" style="max-width:50%"><br>
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email-Adresse" style="max-width:50%"><br>
+                <label for="adress">Strasse</label>
+                <input type="text" class="form-control" name="adress" id="adress" placeholder="Strasse" style="max-width:50%"><br>
+                <label for="adressnumber">Hausnummer</label>
+                <input type="number" class="form-control" name="adressnumber" id="adressnumber" placeholder="Hausnummer" style="max-width:50%"><br>
+                <label for="zipcode">Postleitzahl</label>
+                <input type="number" class="form-control" name="zipcode" id="zipcode" placeholder="Postleitzahl" style="max-width:50%"><br>
+                <label for="city">Stadt</label>
+                <input type="text" class="form-control" name="city" id="city" placeholder="Stadt" style="max-width:50%"><br>
+              </td>
+              <td>
+                <label for="ticket">Ticketart</label>
+                <select name="ticket" class="form-control" id="ticket" style="max-width:50%" oninput="calculate()"><option value="40">Normales Ticket</option><option value="60">VIP Ticket</option><option value="100">Backstage Ticket</option></select><br>
+                <label for="amount">Ticketanzahl</label>
+                <input type="number" class="form-control" name="amount" id="amount" placeholder="Ticketanzahl" style="max-width:50%" oninput="calculate()"><br>
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" style="max-width:50%"><br>
+                <label id="price">Ticketpreis: 0€</label><br>
+                <button type="submit" class="btn btn-success">Tickets Bestellen</button>
+              </td>
+            </tr>
+          </table>
+          </div>
+        </form>
+      </div>
+    </div>
       
       <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 

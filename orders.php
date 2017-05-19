@@ -68,6 +68,7 @@
           <a class="navbar-brand" href="#">Claptrap</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+
                               <?php
                         if(!isset($_SESSION['logged_in'])) {
                             if(isset($_POST['kdnr'])) {
@@ -100,10 +101,14 @@
       </div>
     </nav>
 
+    <div class="container">
 
-
-
-                    <?php
+        <div class="panel panel-primary panel-transparent">
+            <div class="panel-heading">
+                <h3 class="panel-title">Deine Bestellungen</h3>
+            </div>
+            <div class="panel-body">
+                                    <?php
                         if(!isset($_SESSION['logged_in'])) {
                             if(isset($_POST['kdnr'])) {
                                 if($ru==$kdnr) {
@@ -152,11 +157,8 @@
                             include'main.php';
                         }
                     ?>
-
-
-
-
-    <div class="container">
+            </div>
+        </div>
       
       <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
