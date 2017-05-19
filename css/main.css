@@ -95,3 +95,17 @@ body {
   }
 
 }
+
+
+
+/* ----About-Seite---- */
+
+.img-responsive-about, {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.img-center {
+  margin: 0 auto;
+}
