@@ -1,1 +1,6 @@
+Order allow,deny
+Allow from all
+
+DirectoryIndex index.php
+
 ErrorDocument 404 /404.html

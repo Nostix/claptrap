@@ -1,4 +1,13 @@
 <!doctype html>
+    <?php
+        define('include', TRUE);
+        include_once 'session.php';
+        include_once 'db_connect.php';
+        include_once 'check.php';
+        if(isset($_SESSION['logged_in'])) {
+          Header("Location: /orders.php");
+        }
+  ?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -27,12 +36,12 @@
           <a class="navbar-brand" href="#">Claptrap</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
+          <form class="navbar-form navbar-right" role="form" action="orders.php" method="post">
             <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+              <input type="number" name="kdnr" placeholder="Kundennummer" class="form-control">
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+              <input type="password" placeholder="Passwort" name="password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Login</button>
           </form>
@@ -40,12 +49,28 @@
       </div>
     </nav>
 
+    <?php
+        if(isset($_GET['nda'])) {
+            echo '<div class="alert alert-danger" role="alert"><strong>Direct access denied!</strong> The Page you requested is not allowed to be accessed directly.</div>';
+        }
+        if(isset($_GET['logout'])) {
+            echo '<div class="alert alert-success" role="alert"><strong>Logout erfolgreich!</strong> Du bist jetzt nicht mehr angemeldet.</div>';
+        }
+        if(isset($_GET['invalidlogout'])) {
+            echo '<div class="alert alert-danger" role="alert"><strong>Wie m&ouml;chtest du dich ausloggen?</strong> Du warst nicht angemeldet.</div>';
+        }
+        if(isset($_SESSION['setupdone'])) {
+          echo '<div class="alert alert-success" role="alert"><strong>First-time Setup done!</strong> Application is now ready to use.</div>';
+          unset($_SESSION['setupdone']);
+        }
+    ?>
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1 class="mainheader">Claptrap</h1>
         <p class="mainheader">Das Trapfestival des Nordens. Lass dir das nicht entgehen! Und sichere dir deine Teilnahme. Immer nach dem Motto: Untz Untz Wup Wup</p>
-		    <div class="ticket-button mainheader"><p><a href="#" class="btn btn-outlined btn-danger">Jetzt Karten bestellen!</a></p></div>
+		    <div class="ticket-button mainheader"><p><a href="/order.php" class="btn btn-outlined btn-danger">Jetzt Karten bestellen!</a></p></div>
         <!-- old Button  <p class="mainheader"><a class="btn btn-danger btn-lg" href="#" role="button">Jetzt Karten bestellen &raquo;</a></p>-->
 	  
       </div>
@@ -85,7 +110,7 @@
             </div>
 
         </div>
-    </section>
+    </div>
 
     <div class="container">
       <!-- Example row of columns -->
