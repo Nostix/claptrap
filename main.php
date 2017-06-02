@@ -46,7 +46,7 @@ if(isset($_SESSION['current_admin'])) {
 		$order = $connect->prepare("SELECT * FROM users WHERE kdnr ='$current_kndr'");
 		$order->execute();
 		$result = $order->get_result();
-		$row = mysqli_fetch_array($result);
+		$row = mysqli_fetch_array($result);caution
 
 		$kdnr = $row[1];
 		$username = $row[3].' '.$row[4];

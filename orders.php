@@ -119,7 +119,7 @@
                                 if($ru==$kdnr) {
                                     if(isset($password)) {
                                         if(password_verify($password, $rpwe)) {
-                                            echo '<div class="navbar-form navbar-right"><a href="/logout.php"><button class="btn btn-success">Logout</button></a></div>';
+                                            echo '<div class="navbar-form navbar-right"><a href="/logout.php"><button class="btn btn-danger">Logout</button></a></div>';
                                         }
                                         else {
                                             Header("Location: /index.php");

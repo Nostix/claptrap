@@ -26,6 +26,30 @@ body {
   display:none;
 }
 
+.formfirst {
+  text-align: center;
+  flex: 1;          
+  min-width: 200px;
+}
+
+.formfirst input,.formsecond input,.formsecond select {
+  margin: auto;
+  max-width: 80%;
+}
+
+.formsecond {
+  padding-top: auto;
+  padding-bottom: auto;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.loginform {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Makes images fully responsive */
 
 .img-responsive,

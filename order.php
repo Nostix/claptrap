@@ -48,38 +48,34 @@
       </div>
       <div class="panel-body">
         <form action="orders.php" method="post">
-          <div class="form-group">
+          <div class="form-group loginform">
           <br>
-          <table style="width:100%;">
-            <tr>
-              <td>
+          <div class="formfirst">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Name" style="max-width:50%"><br>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name"><br>
                 <label for="lastname">Nachname</label>
-                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nachname" style="max-width:50%"><br>
+                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nachname"><br>
                 <label for="email">Email</label>
-                <input type="text" class="form-control" name="email" id="email" placeholder="Email-Adresse" style="max-width:50%"><br>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email-Adresse"><br>
                 <label for="adress">Strasse</label>
-                <input type="text" class="form-control" name="adress" id="adress" placeholder="Strasse" style="max-width:50%"><br>
+                <input type="text" class="form-control" name="adress" id="adress" placeholder="Strasse"><br>
                 <label for="adressnumber">Hausnummer</label>
-                <input type="number" class="form-control" name="adressnumber" id="adressnumber" placeholder="Hausnummer" style="max-width:50%"><br>
+                <input type="number" class="form-control" name="adressnumber" id="adressnumber" placeholder="Hausnummer"><br>
                 <label for="zipcode">Postleitzahl</label>
-                <input type="number" class="form-control" name="zipcode" id="zipcode" placeholder="Postleitzahl" style="max-width:50%"><br>
+                <input type="number" class="form-control" name="zipcode" id="zipcode" placeholder="Postleitzahl"><br>
                 <label for="city">Stadt</label>
-                <input type="text" class="form-control" name="city" id="city" placeholder="Stadt" style="max-width:50%"><br>
-              </td>
-              <td>
+                <input type="text" class="form-control" name="city" id="city" placeholder="Stadt"><br>
+          </div>
+          <div class="formsecond">
                 <label for="ticket">Ticketart</label>
-                <select name="ticket" class="form-control" id="ticket" style="max-width:50%" oninput="calculate()"><option>Normales Ticket</option><option>VIP Ticket</option><option>Backstage Ticket</option></select><br>
+                <select name="ticket" class="form-control" id="ticket" oninput="calculate()"><option>Normales Ticket</option><option>VIP Ticket</option><option>Backstage Ticket</option></select><br>
                 <label for="amount">Ticketanzahl</label>
-                <input type="number" class="form-control" name="amount" id="amount" placeholder="Ticketanzahl" style="max-width:50%" oninput="calculate()"><br>
+                <input type="number" class="form-control" name="amount" id="amount" placeholder="Ticketanzahl"oninput="calculate()"><br>
                 <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Password" style="max-width:50%"><br>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password"><br>
                 <label id="price">Ticketpreis: 0€</label><br>
                 <button type="submit" class="btn btn-success">Tickets Bestellen</button>
-              </td>
-            </tr>
-          </table>
+          </div>
           </div>
         </form>
       </div>
