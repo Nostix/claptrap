@@ -32,7 +32,7 @@ body {
   min-width: 200px;
 }
 
-.formfirst input,.formsecond input,.formsecond select {
+.formfirst input,.formsecond input,.formsecond textarea {
   margin: auto;
   max-width: 80%;
 }
