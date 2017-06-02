@@ -12,7 +12,7 @@ if(isset($_SESSION['current_admin'])) {
 		echo '<div class="alert alert-success" role="alert"><strong>WOW!</strong> You are now logged in as <strong>Admin</strong>.</div>';
 		echo '<h4>Here are all registered users:</h4><br>';
 		echo "<table class='table'>";
-		echo "<tr><th>Bentzer ID</th><th>Kundennummer</th><th>Adresse</th><th>Ticket</th><th>Anzahl</th><th>Bestellstatus</th><th>Admin</th></tr>";
+		echo "<tr><th>Bentzer ID</th><th>Kundennummer</th><th>Name</th><th>Email</th><th>Adresse</th><th>Ticket</th><th>Anzahl</th><th>Bestellstatus</th><th>Admin</th></tr>";
 
 		$all_users = $connect->prepare("SELECT * FROM users");
 		$all_users->execute();
@@ -22,18 +22,19 @@ if(isset($_SESSION['current_admin'])) {
 			$id = $row[0];
 			$kdnr = $row[1];
 			$pw = $row[2];
-			$email = $row[3];
-			$adress = $row[4].' '.$row[5].' '.$row[7].' '.$row[6];
-			$ticket = $row[8];
-			$amount = $row[9];
-			$shipping = $row[10];
-			if($row[11]=='1') {
+			$username = $row[3].' '.$row[4];
+			$email = $row[5];
+			$adress = $row[6].' '.$row[7].' '.$row[9].' '.$row[8];
+			$ticket = $row[10];
+			$amount = $row[11];
+			$shipping = $row[12];
+			if($row[13]=='1') {
 				$ad = 'yes';
 			}
 			else {
 				$ad = 'no';
 			}
-			echo "<tr><td>".$id."</td><td>".$kdnr."</td><td>".$adress."</td><td>".$ticket."</td><td>".$amount."</td><td>".$shipping."</td><td>".$ad."</td></tr>";
+			echo "<tr><td>".$id."</td><td>".$kdnr."</td><td>".$username."</td><td>".$email."</td><td>".$adress."</td><td>".$ticket."</td><td>".$amount."</td><td>".$shipping."</td><td>".$ad."</td></tr>";
 		} 
 
 		echo "</table><br>";
@@ -48,18 +49,21 @@ if(isset($_SESSION['current_admin'])) {
 		$row = mysqli_fetch_array($result);
 
 		$kdnr = $row[1];
-		$email = $row[3];
-		$adress = $row[4].' '.$row[5].' '.$row[7].' '.$row[6];
-		$ticket = $row[8];
-		$amount = $row[9];
-		$shipping = $row[10];
+		$username = $row[3].' '.$row[4];
+		$email = $row[5];
+		$adress = $row[6].' '.$row[7].' '.$row[9].' '.$row[8];
+		$ticket = $row[10];
+		$amount = $row[11];
+		$shipping = $row[12];
 
-		echo '<div class="alert alert-success" role="alert"><strong>WOW!</strong> You are now logged in.</div><br><br>';
+		echo '<div class="alert alert-success" role="alert"><strong>Herzlichen Glückwunsch!</strong> Hier ist Ihre Bestellung.</div><br><br>';
 		echo "
 		<h4>Ihr Bestellstatus:</h4><br>
 		<table class='table'>
 			<tr>
 				<th>Kundennummer</th>
+				<th>Name</th>
+				<th>Email</th>
 				<th>Adresse</th>
 				<th>Ticket</th>
 				<th>Anzahl</th>
@@ -67,6 +71,8 @@ if(isset($_SESSION['current_admin'])) {
 			</tr>
 			<tr>
 				<td>".$kdnr."</td>
+				<td>".$username."</td>
+				<td>".$email."</td>
 				<td>".$adress."</td>
 				<td>".$ticket."</td>
 				<td>".$amount."</td>

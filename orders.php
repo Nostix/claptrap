@@ -4,6 +4,39 @@
 		include_once 'session.php';
 		include_once 'db_connect.php';
 		include_once 'check.php';
+        if(isset($_POST["name"])&&isset($_POST["lastname"])&&isset($_POST["email"])&&isset($_POST["adress"])&&isset($_POST["adressnumber"])&&isset($_POST["zipcode"])&&isset($_POST["city"])&&isset($_POST["ticket"])&&isset($_POST["amount"])&&isset($_POST["password"])) {
+            $name = $_POST['name'];
+            $lastname = $_POST['lastname'];
+            $password = $_POST['password'];
+            $email = $_POST["email"];
+            $adress = $_POST["adress"];
+            $adressnumber = $_POST["adressnumber"];
+            $city = $_POST["city"];
+            $zipcode = $_POST["zipcode"];
+            $ticket = $_POST["ticket"];
+            $amount = $_POST["amount"];
+            $password_encrypt = password_hash($password, PASSWORD_BCRYPT);
+
+            $kundennummer = rand(10000000, 99999999);
+            $user_check = $connect->prepare("SELECT kdnr FROM users WHERE kdnr LIKE ?");
+            $user_check->bind_param('s', $kundennummer);
+            $user_check->execute();
+            $result = $user_check->get_result();
+            $sresult = $result->fetch_assoc();
+            if(is_array($sresult)) {
+                $kundennummer = rand(10000000, 99999999);
+            }
+
+            $id_query = "SELECT id FROM users ORDER BY id DESC LIMIT 1";
+            $result_id = mysqli_query( $connect,$id_query);
+            $idru = mysqli_fetch_row( $result_id);
+            $userid = ++$idru[0];
+
+            $register_query = $connect->prepare("INSERT INTO users (id, kdnr, pw, name, lastname, email, adress, adressnumber, city, zipcode, ticket, amount, shipping, admin)
+            VALUES ('{$userid}', '{$kundennummer}', '{$password_encrypt}', ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Bestellung eingegangen' , '0')");
+            $register_query->bind_param('sssssssss', $name,$lastname,$email,$adress,$adressnumber,$city,$zipcode,$ticket,$amount);
+            $register_query->execute();
+        }
 		if(!isset($_SESSION['logged_in'])) {
 			if(isset($_POST["kdnr"])) {
 				$kdnr = $_POST["kdnr"];

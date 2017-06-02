@@ -19,10 +19,18 @@ $(document).ready(function(){
 
 });
 
-function calculate() {
-        var myBox1 = document.getElementById('ticket').value;   
+function calculate() { 
         var myBox2 = document.getElementById('amount').value;
-        var result = document.getElementById('price');  
+        var result = document.getElementById('price');
+        if(document.getElementById('ticket').value=='Normales Ticket') {
+            var myBox1 = 40;
+        }
+        else if(document.getElementById('ticket').value=='VIP Ticket') {
+            var myBox1 = 60;
+        }
+        else if(document.getElementById('ticket').value=='Backstage Ticket') {
+            var myBox1 = 80;
+        }
         var myResult = myBox1 * myBox2;
         result.innerHTML = 'Ticketpreis: ' + myResult + '€';
       }

@@ -47,7 +47,7 @@
         <h3 class="panel-title">Tickets bestellen</h3>
       </div>
       <div class="panel-body">
-        <form action="index.php?register" method="post">
+        <form action="orders.php" method="post">
           <div class="form-group">
           <br>
           <table style="width:100%;">
@@ -70,7 +70,7 @@
               </td>
               <td>
                 <label for="ticket">Ticketart</label>
-                <select name="ticket" class="form-control" id="ticket" style="max-width:50%" oninput="calculate()"><option value="40">Normales Ticket</option><option value="60">VIP Ticket</option><option value="100">Backstage Ticket</option></select><br>
+                <select name="ticket" class="form-control" id="ticket" style="max-width:50%" oninput="calculate()"><option>Normales Ticket</option><option>VIP Ticket</option><option>Backstage Ticket</option></select><br>
                 <label for="amount">Ticketanzahl</label>
                 <input type="number" class="form-control" name="amount" id="amount" placeholder="Ticketanzahl" style="max-width:50%" oninput="calculate()"><br>
                 <label for="password">Password</label>
