@@ -138,7 +138,7 @@
                             }
                         }
                         else {
-                            echo '<div class="navbar-form navbar-right"><a href="/logout.php"><button class="btn btn-success">Logout</button></a></div>';
+                            echo '<div class="navbar-form navbar-right"><a href="/logout.php"><button class="btn btn-danger">Logout</button></a></div>';
                         }
                     ?>
         </div><!--/.navbar-collapse -->
