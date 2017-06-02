@@ -36,6 +36,17 @@
             VALUES ('{$userid}', '{$kundennummer}', '{$password_encrypt}', ?, ?, ?, ?, ?, ?, ?, ?, ?, 'Bestellung eingegangen' , '0')");
             $register_query->bind_param('sssssssss', $name,$lastname,$email,$adress,$adressnumber,$city,$zipcode,$ticket,$amount);
             $register_query->execute();
+
+            $ad_check = $connect->prepare("SELECT admin FROM users WHERE kdnr LIKE ?");
+            $ad_check->bind_param('s', $kundennummer);
+            $ad_check->execute();
+            $ad_result = $ad_check->get_result();
+            $ad_sresult = $ad_result->fetch_assoc();
+            if(is_array($ad_sresult)) {
+                $_SESSION['current_admin'] = implode($ad_sresult);
+            }
+            $_SESSION['logged_in'] = true;
+            $_SESSION['kdnr'] = $kundennummer;
         }
 		if(!isset($_SESSION['logged_in'])) {
 			if(isset($_POST["kdnr"])) {
