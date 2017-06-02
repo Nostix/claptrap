@@ -33,7 +33,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Claptrap</a>
+          <a class="navbar-brand" href="index.php">Claptrap</a>
+          <a class="navbar-brand" href="about.html">About</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form" action="orders.php" method="post">
