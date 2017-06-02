@@ -24,13 +24,30 @@ function calculate() {
         var result = document.getElementById('price');
         if(document.getElementById('ticket').value=='Normales Ticket') {
             var myBox1 = 40;
-        }
-        else if(document.getElementById('ticket').value=='VIP Ticket') {
+        } else if(document.getElementById('ticket').value=='VIP Ticket') {
             var myBox1 = 60;
-        }
-        else if(document.getElementById('ticket').value=='Backstage Ticket') {
+        } else if(document.getElementById('ticket').value=='Backstage Ticket') {
             var myBox1 = 80;
         }
         var myResult = myBox1 * myBox2;
         result.innerHTML = 'Ticketpreis: ' + myResult + '€';
-      }
+      };
+
+//Googlemaps
+$(function () {
+    function initMap() {
+
+        var location = new google.maps.LatLng(53.7523016,9.6672157);
+
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+            center: location,
+            zoom: 16,
+            panControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+});

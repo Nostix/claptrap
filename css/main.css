@@ -152,3 +152,10 @@ body {
   border-color: transparent;
   background: rgba(46, 51, 56, 0.8)!important;
 }
+
+#map {
+    max-width: 930px;
+    height: 400px; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}

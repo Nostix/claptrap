@@ -24,6 +24,7 @@
     </head>
     <body>
 
+    <!--####### Navbar #######-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -35,6 +36,7 @@
           </button>
           <a class="navbar-brand" href="index.php">Claptrap</a>
           <a class="navbar-brand" href="about.html">About</a>
+          <a class="navbar-brand" href="anfahrt.html">Anfahrt</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form" action="orders.php" method="post">
@@ -46,7 +48,7 @@
             </div>
             <button type="submit" class="btn btn-success">Login</button>
           </form>
-        </div><!--/.navbar-collapse -->
+        </div>
       </div>
     </nav>
 
