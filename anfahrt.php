@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html>
     <head>
@@ -26,10 +27,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Claptrap</a>
-          <a class="navbar-brand" href="about.html">About</a>
-          <a class="navbar-brand" href="anfahrt.html">Anfahrt</a>
-          <a class="navbar-brand" href="kontakt.html">Kontakt</a>
+          <a class="navbar-brand" href="index.php">Claptrap</a>
+          <a class="navbar-brand" href="about.php">About</a>
+          <a class="navbar-brand" href="anfahrt.php">Anfahrt</a>
+          <a class="navbar-brand" href="kontakt.php">Kontakt</a>
         </div>
       </div>
     </nav>
@@ -64,7 +65,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Nostix Code 2k17</p>
+        <p>&copy; Nostix Code 2k17 | <?php include ("counter.php"); ?></p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
