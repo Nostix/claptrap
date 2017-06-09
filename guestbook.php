@@ -28,11 +28,11 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
 }
 
 ?>
-<!doctype php>
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>empty</title>
+        <title>Guestbook</title>
         <meta name="description" content="Trapfestival">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -59,6 +59,7 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
           <a class="navbar-brand" href="about.php">About</a>
           <a class="navbar-brand" href="anfahrt.php">Anfahrt</a>
           <a class="navbar-brand" href="kontakt.php">Kontakt</a>
+          <a class="navbar-brand" href="guestbook.php">G&auml;stebuch</a>
         </div>
       </div>
     </nav>
@@ -89,7 +90,7 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
 
                 <div class="panel panel-transparent">
                   <div class="panel-heading">
-                    <div class="gaestebuch_header">'.$name.'</div><div class="gaestebuch_header text-right">'.$date.'</div>
+                    <div class="gaestebuch_header">'.$name.'</div><div class="gaestebuch_header date">'.$date.'</div>
                   </div>
                   <div class="panel-body"><p>'.$nachricht.'</p></div>
                 </div>
@@ -100,9 +101,9 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
         <form action="/guestbook.php" method="post">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Name" style="width: 250px;"><br>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name" maxlength="31" style="width: 250px;"><br>
             <label for="nachricht">Nachricht</label>
-            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" placeholder='Schreibe hier deinen Gästebucheintrag.'></textarea><br>
+            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" maxlength="765" placeholder='Schreibe hier deinen Gästebucheintrag.'></textarea><br>
             <button type="submit" class="btn btn-success">Senden</button>
           </div>
         </form>

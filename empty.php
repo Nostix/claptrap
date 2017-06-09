@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<!doctype php>
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -30,6 +30,7 @@
           <a class="navbar-brand" href="about.php">About</a>
           <a class="navbar-brand" href="anfahrt.php">Anfahrt</a>
           <a class="navbar-brand" href="kontakt.php">Kontakt</a>
+          <a class="navbar-brand" href="guestbook.php">G&auml;stebuch</a>
         </div>
       </div>
     </nav>
