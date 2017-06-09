@@ -9,8 +9,15 @@ body {
 
 .mainheader {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
+.countdown {
+  width: 400px;
+  margin: 10px auto;
+}
 
 .jumbotron {
   background: none;

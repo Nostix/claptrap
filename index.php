@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="js/countdown.js"></script>
+        
     </head>
     <body>
 
@@ -43,8 +43,9 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="mainheader">Claptrap</h1>
-        <p class="mainheader" id="countdown"></p>
-		    <div class="ticket-button mainheader"><p><a href="kontakt.html" class="btn btn-outlined btn-danger">Jetzt Karten bestellen!</a></p></div>
+        <h2 class="mainheader" id="countdown"></h2>
+        <script src="js/countdown.js"></script>
+		    <div class="ticket-button mainheader"><p><a href="kontakt.php" class="btn btn-outlined btn-danger">Jetzt Karten bestellen!</a></p></div>
         <!-- old Button  <p class="mainheader"><a class="btn btn-danger btn-lg" href="#" role="button">Jetzt Karten bestellen &raquo;</a></p>-->
 	  
       </div>
