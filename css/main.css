@@ -14,6 +14,21 @@ body {
 
 }
 
+.gaestebuch_header {
+  margin: 0px auto;
+  width: 30%;
+  display: inline-block;
+
+}
+
+.name {
+  float: left;
+}
+
+.date {
+  float: right;
+}
+
 .countdown {
   width: 400px;
   margin: 10px auto;
