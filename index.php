@@ -55,8 +55,8 @@
 	  
       </div>
     </div>
-    
-    <div class="section-white" id="firstelement">
+    <div id="firstelement" style="margin-bottom: 75px;"></div>
+    <div class="imagecarousel">
         <div class="container frontimages">
 
             <div id="frontimages" class="carousel slide" data-ride="carousel">

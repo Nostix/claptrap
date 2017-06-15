@@ -6,6 +6,9 @@ $(document).ready(function(){
             } else {
                 $('#back-to-top').fadeOut();
             }
+            if ($(this).scrollTop() === 0) {
+                window.wasScrolled = false;
+            }
         });
         // scroll body to 0px on click
         $('#back-to-top').click(function () {
@@ -43,7 +46,9 @@ if (document.getElementById('map')) {
 if (document.getElementById('firstelement')) {
 window.wasScrolled = false;
     $(window).bind('scroll',function(){
-        if (!window.wasScrolled){ $('html, body').animate({scrollTop:document.getElementById('firstelement').getBoundingClientRect().top},1000)}
+        if (!window.wasScrolled) {
+            $('html, body').animate({scrollTop:document.getElementById('firstelement').getBoundingClientRect().top},1000)
+        }
         window.wasScrolled = true;
     })
 }
