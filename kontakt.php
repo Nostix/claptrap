@@ -45,6 +45,11 @@
         <h3>Kontaktformular</h3>
       </div>
       <div class="panel-body">
+        <?php
+          if(isset($_GET['mailsent'])) {
+            echo '<div class="alert alert-success" role="alert"><strong>Danke!</strong> Ihre nachricht wurde gesendet.</div>';
+          }
+        ?>
         <form action="/mail.php" method="post">
           <div class="form-group loginform">
           <br>
