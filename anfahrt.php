@@ -18,7 +18,7 @@
     <body>
 
   <!--####### Navbar #######-->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,11 +28,15 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.php">Claptrap</a>
-          <a class="navbar-brand" href="about.php">About</a>
-          <a class="navbar-brand" href="anfahrt.php">Anfahrt</a>
-          <a class="navbar-brand" href="kontakt.php">Kontakt</a>
-          <a class="navbar-brand" href="guestbook.php">G&auml;stebuch</a>
         </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+            <li><a href="about.php">About</a></li>
+            <li><a class="active" href="anfahrt.php">Anfahrt</a></li>
+            <li><a href="kontakt.php">Kontakt</a></li>
+            <li><a href="guestbook.php">G&auml;stebuch</a></li>
+          </ul>
+      </div>
       </div>
     </nav>
 
@@ -68,9 +72,8 @@
       <footer>
         <p>&copy; Nostix Code 2k17 | <?php include ("counter.php"); ?></p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+    </div> <!-- /container -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
    </div>
