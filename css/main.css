@@ -1,7 +1,7 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
   
@@ -167,11 +167,20 @@ body {
 .panel-transparent .panel-heading{
   border-color: transparent;
   background: rgba(122, 130, 136, 0.8)!important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.panel-transparent .panel-heading h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .panel-transparent .panel-body{
   border-color: transparent;
   background: rgba(46, 51, 56, 0.8)!important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #map {

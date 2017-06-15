@@ -46,56 +46,65 @@
 
         <!-- Vorstellung -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Claptrap Festival
-                    <small>„Das größte Trap Festival im Norden“</small>
-                </h1>
+          <div class="col-lg-12">
+              <div class="panel panel-transparent">
+                <div class="panel-heading"><h3>Claptrap Festival</h3>
+                    <h4>„Das größte Trap Festival im Norden“</h4>
+                </div>
+                <div class="panel-body">
                 <p>Erlebt mit 55.000 anderen Trap begeisgerten das größte Trap Festival im Norden! Denn kein anderer bietet so viel Trap im Norden wie wir! Der Bass wird euch durchdringen und euch zum erzittern bringen! Das wird ein Erdbeben der brutalen art.</p>
                 <p>ALSO WORAUF WARTET IHR!!! DAS WIRD DAS FESTIVAL DES JAHRES</p>
-
+                </div>
+              </div>
             </div>
         </div>
 
         <!-- Kuenstler -->
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Künstler</h2>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/Luminox.jpg" alt="Luminox Bild">
-                <h3>Luminox
+          <div class="col-lg-12">
+            <div class="panel panel-transparent">
+              <div class="panel-heading">
+                <h3>Künstler</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/Luminox.jpg" alt="Luminox Bild">
+                  <h3>Luminox
                     <small>DJ</small>
-                </h3>
-                <p>Der Junge aus Phoenix, Arizona überzeugt mit verspielten und auffälligen Beats!</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/UZ.jpg" alt="UZ Bild">
-                <h3>ƱZ
+                  </h3>
+                  <p>Der Junge aus Phoenix, Arizona überzeugt mit verspielten und auffälligen Beats!</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/UZ.jpg" alt="UZ Bild">
+                  <h3>ƱZ
                     <small>sample</small>
-                </h3>
-                <p>Keiner lässt die Boxen besser beben! Tiefe und böse Bässe lassen euch erzittern!	</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/Baauer.jpg" alt="Baauer Bild">
-                <h3>Baauer
+                  </h3>
+                  <p>Keiner lässt die Boxen besser beben! Tiefe und böse Bässe lassen euch erzittern!	</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/Baauer.jpg" alt="Baauer Bild">
+                  <h3>Baauer
                     <small>sample</small>
-                </h3>
-                <p>Entspannter Trap zum Chillen. Perfekt zum Cruisen oder am Strand Skateboard fahren</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/TNGHT.jpg" alt="TNGHT Bild">
-                <h3>TNGHT
+                  </h3>
+                  <p>Entspannter Trap zum Chillen. Perfekt zum Cruisen oder am Strand Skateboard fahren</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/TNGHT.jpg" alt="TNGHT Bild">
+                  <h3>TNGHT
                     <small>sample</small>
-                </h3>
-                <p>Aggressive Bässe mit einzigartigen Klang! Wer da nicht abgeht ist Taub!</p>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/RL_grime.jpg" alt="RL GRIME Bild">
-                <h3>RL GRIME
+                  </h3>
+                  <p>Aggressive Bässe mit einzigartigen Klang! Wer da nicht abgeht ist Taub!</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/RL_grime.jpg" alt="RL GRIME Bild">
+                  <h3>RL GRIME
                     <small>sample</small>
-                </h3>
-                <p>Party machen und abgehen ist sein Spezial gebiet. Seinen Beats machen einfach Spaß beim zuhören.</p>
+                  </h3>
+                  <p>Party machen und abgehen ist sein Spezial gebiet. Seinen Beats machen einfach Spaß beim zuhören.</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
 <!--####### Back-to-top #######-->

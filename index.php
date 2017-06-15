@@ -94,6 +94,11 @@
 
     <div class="container">
       <!-- Example row of columns -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h3>Infos</h3>
+      </div>
+      <div class="panel-body">
       <div class="row">
         <div class="col-md-4">
           <h2>Heading</h2>
@@ -109,6 +114,7 @@
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
         </div>
       </div>
 
