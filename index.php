@@ -56,7 +56,7 @@
       </div>
     </div>
     
-    <div class="section-white">
+    <div class="section-white" id="firstelement">
         <div class="container frontimages">
 
             <div id="frontimages" class="carousel slide" data-ride="carousel">
