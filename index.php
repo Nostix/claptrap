@@ -92,7 +92,23 @@
         </div>
     </div>
 
-    <div class="container">
+<div class="container">
+      <!-- Example row of columns -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h3>Die Band die ich persönlich am besten finde</h3>
+      </div>
+      <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Wer sind wir?</h2>
+          <p>Ihr habt bock uns Live zu sehen? Am <b>4. Juli</b> sind den ganzen Abend im Kinder- Jugendhaus Krükaupark Elmshorn!
+          Der Eintritt kostet <b>7€</b> und einlass ist um <b>18:30</b> </p>
+          <p> Es wird für alles gesorgt, Getränke und Snacks gibt es drinnen und wer bock auf Warmes hat, kann sich draußen was vom Grillstand holen.</p>
+        </div>
+      </div>
+      </div>
+
       <!-- Example row of columns -->
     <div class="panel panel-transparent">
       <div class="panel-heading">
@@ -100,21 +116,19 @@
       </div>
       <div class="panel-body">
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-6">
+          <h2>Kinder- Jugendhaus Krückaupark Elmshorn</h2>
+          <p>Das Kinder- Jugendhaus Krückaupark Elmshorn ist eine großartige Location für Junge leute. Man kann sich dort nach der Schule oder einfach so am Abend treffen und mit Freunden chillen. Es gibt genügend beschäftigungen wie Tischkicker, Billiard, Fußball und mehr. Außerdem bieten sie auch tolle ausfahrten und Events an. <b> Ihr sollte echt mal vorbeischauen </b>  </p>
+          <p><a class="btn btn-default" href="#" role="button">Zur Homepage &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-6">
+          <h2>Unsere Sponsoren?</h2>
+          <p>Vielen Dank an das Kinder- Jugendhaus Krückaupark Elmshorn für die Bereitstellung der Location und der Snack / Getränke.
+            Ein großes dankeschön geht auch an Roland Würstchen für den Grillwagen.
+            Unsere weiteren Sponsoren sind die Stadtwerke Elmshorn, Musikschule Elmshorn und Peter Kölln.</p>
+          
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        
         </div>
       </div>
 

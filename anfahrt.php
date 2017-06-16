@@ -48,13 +48,15 @@
             <h3>Anfahrts-Karte</h3>
           </div>
           <div class="panel-body">
-            <h1>Google maps & Bootstrap tutorial from <a href="http://bootstrapious.com">Bootstrapious.com</a></h1>
+            <h1>Anfahrt</h1>
 
-            <p class="lead">This is a demo for our tutorial showing you how to add a custom styled Google maps into a Bootstrap page.</p>
+            <p class="lead">Wo findet denn die Party statt? Natürlich im Jugendhaus Elmshorn! <b>Zum Krückaupark 5A 25337 Elmshorn</b></p>
 
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p><b>Es gibt gen&uuml;gend Parkplätze.</b> Das Jugendhaus ist direkt neben der Schwimhalle und dem
+            Kr&uuml;ckaustadion. </p>
 
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+            <p>F&uuml;r den Fußweg vom Bahnhof m&uuml;sst ihr ca. 15min einplanen.
+            Rechts aus dem Bahnhof rausgehen (nicht richtung Stadtkern). Einfach die M&uuml;hlenstraße bis zum Ende laufen, dann über die Ampel gehen und rechts halten. Die Langelohe Str. solange entlang laufen, bis ihr kurz vor der Kreuzung auf der linken Seite einen Sandweg in ein Waldstück findet. Lauft den Weg wieder bis zum Ende. Ihr werdet an einer Turnhalle vorbeikommen und auch die Schwimmhalle sehen. Geht an der Schwimhalle vorbei und auf das erste Haus daneben ist das Jugendhaus.</p>
 
             <div id="map"></div>
           </div>
