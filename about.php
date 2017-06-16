@@ -29,7 +29,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li><a class="active" href="about.php">About</a></li>
+            <li><a class="active" href="about.php">About Us</a></li>
             <li><a href="anfahrt.php">Anfahrt</a></li>
             <li><a href="kontakt.php">Kontakt</a></li>
             <li><a href="guestbook.php">G&auml;stebuch</a></li>
@@ -48,64 +48,38 @@
         <div class="row">
           <div class="col-lg-12">
               <div class="panel panel-transparent">
-                <div class="panel-heading"><h3>Claptrap Festival</h3>
-                    <h4>„Das größte Trap Festival im Norden“</h4>
+                <div class="panel-heading"><h3>Die Band die ich perönlich am besten finde</h3>
+                    <h4>„Rap-Rock zum abgehen “</h4>
                 </div>
                 <div class="panel-body">
-                <p>Erlebt mit 55.000 anderen Trap begeisgerten das größte Trap Festival im Norden! Denn kein anderer bietet so viel Trap im Norden wie wir! Der Bass wird euch durchdringen und euch zum erzittern bringen! Das wird ein Erdbeben der brutalen art.</p>
-                <p>ALSO WORAUF WARTET IHR!!! DAS WIRD DAS FESTIVAL DES JAHRES</p>
+                <p>Wir sind "Die Band die ich persönlich am besten finde" und spielen Rap-Rock im Style vom Hollywood Undead und Limp Bizkit. Wir haben unser erstes Album rausgebracht und spielen in der Umgebung unsere Songs. </p>
                 </div>
               </div>
             </div>
         </div>
 
-        <!-- Kuenstler -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="panel panel-transparent">
-              <div class="panel-heading">
-                <h3>Künstler</h3>
-              </div>
-              <div class="panel-body">
-                <div class="col-lg-4 col-sm-6 text-center">
-                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/Luminox.jpg" alt="Luminox Bild">
-                  <h3>Luminox
-                    <small>DJ</small>
-                  </h3>
-                  <p>Der Junge aus Phoenix, Arizona überzeugt mit verspielten und auffälligen Beats!</p>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center">
-                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/UZ.jpg" alt="UZ Bild">
-                  <h3>ƱZ
-                    <small>sample</small>
-                  </h3>
-                  <p>Keiner lässt die Boxen besser beben! Tiefe und böse Bässe lassen euch erzittern!	</p>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center">
-                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/Baauer.jpg" alt="Baauer Bild">
-                  <h3>Baauer
-                    <small>sample</small>
-                  </h3>
-                  <p>Entspannter Trap zum Chillen. Perfekt zum Cruisen oder am Strand Skateboard fahren</p>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center">
-                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/TNGHT.jpg" alt="TNGHT Bild">
-                  <h3>TNGHT
-                    <small>sample</small>
-                  </h3>
-                  <p>Aggressive Bässe mit einzigartigen Klang! Wer da nicht abgeht ist Taub!</p>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center">
-                  <img class="img-circle img-responsive-about img-center" src="img/Trap_Artists/RL_grime.jpg" alt="RL GRIME Bild">
-                  <h3>RL GRIME
-                    <small>sample</small>
-                  </h3>
-                  <p>Party machen und abgehen ist sein Spezial gebiet. Seinen Beats machen einfach Spaß beim zuhören.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--####### Geschichte #######-->
+
+    <!-- Example row of columns -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h3>Geschichte</h3>
+      </div>
+      <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Gründung</h2>
+          <p>Wir haben uns 2013 durch die Schulband getroffen. Nach der Schule haben wir uns entschieden weiter als Band zu spielen. Wir haben früh gemerkt, dass wir ein gemeinsames Musik interesse haben und haben uns entschieden Rap-Rock zu machen. Zu unseren Vorbildern gehören Bands wie Hollywood Undead, Limp Bizkit und Thousand Foot Krutch. Unsere ersten Konzerte waren in der Schule auf dem Musikabend. Wir hatten recht früh viele Fans. Die meisten natürlich Schulfreunde, aber auch Leute aus anderen Schulen kamen zu unseren Schulkonzerten. Der Vater von (    ) hat ein eigenes Tonstudio. Dies war natürlich perfekt für uns. Also machten wir erst unsere erste LP und dann kamm auch schon die EP. Wir wurden immer bekannte und haben auftritte in Jungendzentren gehabt und unsere größten Erfolge war die Auftritte 2015 beim Rock ' Rose in Uetersen und 2016 auf dem Acker Festival in Kummerfeld.</p>
+          
         </div>
+        <div class="col-md-6">
+          <h2></h2>
+          <p></p>
+          
+       </div>
+        </div>
+      </div>
+        
 
 <!--####### Back-to-top #######-->
 
