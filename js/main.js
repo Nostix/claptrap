@@ -25,23 +25,36 @@ $(document).ready(function(){
 //Googlemaps
 if (document.getElementById('map')) {
     $(function () {
-        function initMap() {
 
-            var location = new google.maps.LatLng(53.7523016,9.6672157);
+    function initMap() {
 
-            var mapCanvas = document.getElementById('map');
-            var mapOptions = {
-                center: location,
-                zoom: 16,
-                panControl: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(mapCanvas, mapOptions);
+        var location = new google.maps.LatLng(53.756302, 9.673706);
+
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+            center: location,
+            zoom: 14,
+            panControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
 
-        google.maps.event.addDomListener(window, 'load', initMap);
-    });
+        var markerImage = '../img/marker.png';
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: markerImage
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initMap);
+});
 }
+
+
+
+
+
 //Scroll to first element
 if (document.getElementById('firstelement')) {
 window.wasScrolled = false;
