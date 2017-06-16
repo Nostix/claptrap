@@ -40,6 +40,13 @@
             <li><a href="kontakt.php">Kontakt</a></li>
             <li><a href="guestbook.php">G&auml;stebuch</a></li>
           </ul>
+          <div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+          	<audio controls>
+	<source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+	<source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+	<a href="http://www.w3schools.com/html/horse.mp3">horse</a>
+</audio>
+          </div>
     	</div>
       </div>
     </nav>
