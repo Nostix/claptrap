@@ -7,11 +7,15 @@ body {
   
 }
 
+footer {
+  color: white;
+}
+
 .mainheader {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
+  font-size: x-large;
 }
 
 .gaestebuch_header {
@@ -29,7 +33,7 @@ body {
 }
 
 .countdown {
-  width: 400px;
+  width: 280px;
   margin: 10px auto;
 }
 
@@ -84,11 +88,11 @@ body {
 }
 
 .btn-outlined {
+  font-size: x-large;
     border-radius: 0;
     -webkit-transition: all 0.3s;
        -moz-transition: all 0.3s;
             transition: all 0.3s;
-	font-size: 32px;
 }
 
 .btn-outlined.btn-danger {
@@ -129,6 +133,18 @@ body {
 
   .imagecarousel {
      padding: 24px 0;
+  }
+
+  .btn-outlined {
+    font-size: 32px;
+  }
+
+  .mainheader {
+    font-size: xx-large;
+  }
+
+  .countdown {
+  width: 400px;
   }
 
 }
