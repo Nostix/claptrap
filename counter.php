@@ -19,5 +19,5 @@
 		fclose($file);
 	}
 
-	echo "Testvisitor number: " .$counterVal;
+	echo "Besucher: " .$counterVal;
 ?>
