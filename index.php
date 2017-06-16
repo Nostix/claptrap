@@ -122,7 +122,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Kinder- Jugendhaus Krückaupark Elmshorn</h2>
-          <p>Das Kinder- Jugendhaus Krückaupark Elmshorn ist eine großartige Location für Junge leute. Man kann sich dort nach der Schule oder einfach so am Abend treffen und mit Freunden chillen. Es gibt genügend beschäftigungen wie Tischkicker, Billiard, Fußball und mehr. Außerdem bieten sie auch tolle ausfahrten und Events an. <b> Ihr sollte echt mal vorbeischauen </b>  </p>
+          <p>Das Kinder- Jugendhaus Krückaupark Elmshorn ist eine großartige Location für Junge leute. Man kann sich dort nach der Schule oder einfach so am Abend treffen und mit Freunden chillen. Es gibt genügend beschäftigungen wie Tischkicker, Billiard, Fußball und mehr. Außerdem bieten sie auch tolle ausfahrten und Events an. <b> Ihr solltet echt mal vorbeischauen. </b>  </p>
           <p><a class="btn btn-default" href="#" role="button">Zur Homepage &raquo;</a></p>
         </div>
         <div class="col-md-6">

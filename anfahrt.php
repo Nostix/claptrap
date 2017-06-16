@@ -59,9 +59,17 @@
             <p><b>Es gibt gen&uuml;gend Parkplätze.</b> Das Jugendhaus ist direkt neben der Schwimhalle und dem
             Kr&uuml;ckaustadion. </p>
 
-            <p>F&uuml;r den Fußweg vom Bahnhof m&uuml;sst ihr ca. 15min einplanen.
-            Rechts aus dem Bahnhof rausgehen (nicht richtung Stadtkern). Einfach die M&uuml;hlenstraße bis zum Ende laufen, dann über die Ampel gehen und rechts halten. Die Langelohe Str. solange entlang laufen, bis ihr kurz vor der Kreuzung auf der linken Seite einen Sandweg in ein Waldstück findet. Lauft den Weg wieder bis zum Ende. Ihr werdet an einer Turnhalle vorbeikommen und auch die Schwimmhalle sehen. Geht an der Schwimhalle vorbei und auf das erste Haus daneben ist das Jugendhaus.</p>
+            <div class="panel panel-transparent">
+              <div class="panel-heading">
+                <h3>Der Weg vom Bahnhof</h3>
+              </div>
+              <div class="panel-body">
 
+              <p>F&uuml;r den Fußweg vom Bahnhof m&uuml;sst ihr ca. 15min einplanen.
+              Rechts aus dem Bahnhof rausgehen (nicht richtung Stadtkern). Einfach die M&uuml;hlenstraße bis zum Ende laufen, dann über die Ampel gehen und rechts halten. Die Langelohe Str. solange entlang laufen, bis ihr kurz vor der Kreuzung auf der linken Seite einen Sandweg in ein Waldstück findet. Lauft den Weg wieder bis zum Ende. Ihr werdet an einer Turnhalle vorbeikommen und auch die Schwimmhalle sehen. Geht an der Schwimhalle vorbei und auf das erste Haus daneben ist das Jugendhaus.</p>
+
+              </div>
+            </div>
             <div id="map"></div>
           </div>
         </div>
