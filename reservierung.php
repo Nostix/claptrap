@@ -1,9 +1,27 @@
-<?php session_start(); ?>
+<?php session_start(); 
+$dbhost = 'localhost';
+$dbuser = 'php';
+$dbpass = 'php';
+$dbname = 'php';
+$connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+if(! $connect )
+{
+  die('Could not connect: ' . mysql_error());
+}
+
+$create_database = "CREATE TABLE IF NOT EXISTS karten (
+            name VARCHAR(100),
+            email TEXT,
+            amount INTEGER,
+            postdate VARCHAR(60)
+            )";
+mysqli_query( $connect, $create_database);
+?>
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Kontakt</title>
+        <title>Karten-Reservierung</title>
         <meta name="description" content="Trapfestival">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,27 +69,64 @@
       <div class="panel-body">
         <?php
           if(isset($_GET['mailsent'])) {
-            echo '<div class="alert alert-success" role="alert"><strong>Danke!</strong> Ihre nachricht wurde gesendet.</div>';
+            echo '<div class="alert alert-success" role="alert"><strong>Danke!</strong> Ihre Reservierung wurde gesendet.</div>';
           }
+
+          $total = $connect->prepare("SELECT sum(amount) FROM karten");
+          $total->execute();
+          $result = $total->get_result();
+
+          while($row = mysqli_fetch_array($result)) {
+            $sum = $row[0];
+          }
+          if ($sum >= 300) {
         ?>
-        <form action="/mail.php" method="post">
+        <div class="alert alert-danger" role="alert"><strong>Tut uns leid!</strong> Die Tickets sind leider ausverkauft.</div>
+        <form action="/reservemail.php" method="post">
+        <fieldset disabled>
           <div class="form-group loginform">
           <br>
           <div class="formfirst">
             <label for="name">Name*</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Name"><br>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required><br>
             <label for="email">Email*</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email-Adresse"><br>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email-Adresse" required><br>
           </div>
           <div class="formsecond">
-            <label for="nachricht">Nachricht*</label>
+            <label for="name">Kartenanzahl*</label>
+            <select class="form-control" name="amount" id="amount" placeholder="Kartenanzahl" required> <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select><br>
+            <label for="nachricht">Nachricht</label>
+            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" placeholder='Schreiben Sie hier ihre Nachricht.'></textarea><br>
+            <button type="submit" class="btn btn-success">Senden</button>
+          </div>
+          </div>
+        </fieldset>
+        </form>
+        <?php
+          } else {
+        ?>
+        <form action="/reservemail.php" method="post">
+          <div class="form-group loginform">
+          <br>
+          <div class="formfirst">
+            <label for="name">Name*</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required><br>
+            <label for="email">Email*</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email-Adresse" required><br><br>
+            <p>Es sind noch <strong><?php echo 300 - $sum; ?> Tickets</strong> verfügbar</p>
+          </div>
+          <div class="formsecond">
+            <label for="name">Kartenanzahl*</label>
+            <select class="form-control" name="amount" id="amount" placeholder="Kartenanzahl" required> <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select><br>
+            <label for="nachricht">Nachricht</label>
             <textarea class="form-control" name="nachricht" id="nachricht" rows="5" placeholder='Schreiben Sie hier ihre Nachricht.'></textarea><br>
             <button type="submit" class="btn btn-success">Senden</button>
           </div>
           </div>
         </form>
+        *Erforderliche Felder
       </div>
-      *Erforderliche Felder
+      <?php } ?>
     </div>
 
   <!--####### Back-to-top #######-->

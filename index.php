@@ -61,7 +61,7 @@
         <h1 class="mainheader">Claptrap</h1>
         <h2 class="mainheader" id="countdown"></h2>
         <script src="js/countdown.js"></script>
-		    <div class="ticket-button mainheader"><p><a href="kontakt.php" class="btn btn-outlined btn-danger">Jetzt Karten bestellen!</a></p></div>
+		    <div class="ticket-button mainheader"><p><a href="reservierung.php" class="btn btn-outlined btn-danger">Jetzt Karten reservieren!</a></p></div>
         <!-- old Button  <p class="mainheader"><a class="btn btn-danger btn-lg" href="#" role="button">Jetzt Karten bestellen &raquo;</a></p>-->
 	  
       </div>

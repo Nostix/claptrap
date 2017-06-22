@@ -57,7 +57,7 @@ footer {
   min-width: 200px;
 }
 
-.formfirst input,.formsecond input,.formsecond textarea {
+.formfirst input,.formsecond select,.formsecond textarea {
   margin: auto;
   max-width: 80%;
 }
