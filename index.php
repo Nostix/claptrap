@@ -35,7 +35,7 @@
         </div>
 		<div class="collapse navbar-collapse" id="navbar">
 		  <ul class="nav navbar-nav">
-            <li><a href="about.php">About</a></li>
+            <li><a href="about.php">Band</a></li>
             <li><a href="anfahrt.php">Anfahrt</a></li>
             <li><a href="kontakt.php">Kontakt</a></li>
             <li><a href="guestbook.php">G&auml;stebuch</a></li>
@@ -114,7 +114,7 @@
         <div class="col-md-12">
           <h2>Wer sind wir?</h2>
           <p>Ihr habt bock uns Live zu sehen? Am <b>4. Juli</b> sind den ganzen Abend im Kinder- Jugendhaus Krükaupark Elmshorn!
-          Der Eintritt kostet <b>7€</b> und einlass ist um <b>18:30</b> </p>
+          Der Eintritt kostet <b>4,99€</b> und einlass ist um <b>18:30</b> </p>
           <p> Es wird für alles gesorgt, Getränke und Snacks gibt es drinnen und wer bock auf Warmes hat, kann sich draußen was vom Grillstand holen.</p>
         </div>
       </div>

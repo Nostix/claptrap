@@ -63,7 +63,7 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
         </div>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-            <li><a href="about.php">About</a></li>
+            <li><a href="about.php">Band</a></li>
             <li><a href="anfahrt.php">Anfahrt</a></li>
             <li><a href="kontakt.php">Kontakt</a></li>
             <li><a class="active" href="guestbook.php">G&auml;stebuch</a></li>
