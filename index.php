@@ -53,7 +53,7 @@
       </div>
     </nav>
     <div style="float: right;">
-    <img style="position: relative;" src="img/overlaybesucherzahler.png">
+    <img style="position: relative; margin-bottom: 50px;" src="img/overlaybesucherzahler.png">
     <?php include ("counter.php"); ?>
     </div>
 

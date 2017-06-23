@@ -9,7 +9,6 @@ body {
 
 footer {
   color: white;
-<<<<<<< HEAD
 }
 
 
@@ -22,8 +21,6 @@ footer {
   margin-left: 50px;
   color: #9d9d9d;
   position: absolute;
-=======
->>>>>>> 46149584b71873b5abf4d8a7294fb89e20b16dbb
 }
 
 .mainheader {
@@ -205,7 +202,7 @@ footer {
 /* ----Transparentes Panel---- */
 
 .panel-transparent {
-  margin-top: 20px;
+  margin-top: 40px;
   background: none;
   border-color: transparent;
   color: white;
