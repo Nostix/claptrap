@@ -41,6 +41,8 @@
             <li><a href="guestbook.php">G&auml;stebuch</a></li>
           </ul>
           <div class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+
+
           	<audio controls>
 	<source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
 	<source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
@@ -50,11 +52,13 @@
     	</div>
       </div>
     </nav>
-
-    <div class="container" style="margin-top:20px;">
-    
+    <div style="float: right;">
+    <img style="position: relative;" src="img/overlaybesucherzahler.png">
+    <?php include ("counter.php"); ?>
     </div>
 
+
+  <div class="container" style="margin-top:20px;">
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
@@ -63,7 +67,7 @@
         <script src="js/countdown.js"></script>
 		    <div class="ticket-button mainheader"><p><a href="reservierung.php" class="btn btn-outlined btn-danger">Jetzt Karten reservieren!</a></p></div>
         <!-- old Button  <p class="mainheader"><a class="btn btn-danger btn-lg" href="#" role="button">Jetzt Karten bestellen &raquo;</a></p>-->
-	  
+	 </div>
       </div>
     </div>
     <div id="firstelement" style="margin-bottom: 75px;"></div>
@@ -153,7 +157,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Nostix Code 2k17 | <?php include ("counter.php"); ?></p>
+        <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a></p>
       </footer>
     </div> <!-- /container -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>

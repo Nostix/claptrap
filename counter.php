@@ -19,5 +19,5 @@
 		fclose($file);
 	}
 
-	echo "Besucher: " .$counterVal;
+	echo "<p id='counter'>Besucher: ".$counterVal."</p>";
 ?>

@@ -42,6 +42,10 @@
       </div>
       </div>
     </nav>
+    <div style="float: right;">
+    <img style="position: relative;" src="img/overlaybesucherzahler.png">
+    <?php include ("counter.php"); ?>
+    </div>
     
     <div class="container">
     <div class="panel panel-transparent">
@@ -82,7 +86,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Nostix Code 2k17 | <?php include ("counter.php"); ?></p>
+        <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a></p>
       </footer>
     </div> <!-- /container -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>

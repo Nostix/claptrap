@@ -7,13 +7,20 @@ body {
   
 }
 
-.blabla {
-  margin: 0px auto;
-
-}
-
 footer {
   color: white;
+}
+
+
+.navbar-inverse{
+  border-color: #222;
+}
+
+#counter{
+  margin-top: -23px;
+  margin-left: 50px;
+  color: #9d9d9d;
+  position: absolute;
 }
 
 .mainheader {
