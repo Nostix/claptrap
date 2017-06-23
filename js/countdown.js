@@ -6,8 +6,10 @@ var distance = countDownDate - now;
 var days = Math.floor(distance / (1000*60*60*24));
 var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
 var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-document.getElementById("countdown").innerHTML = "Zähle mit uns:<table class='countdown'><tr><td>" + days + "</td><td>" + hours + "</td><td>" + minutes + "</td></tr><tr><td> Tage </td><td> Stunden </td><td> Minuten </td></tr></table>";
+
+document.getElementById("countdown").innerHTML = "Zähle mit uns:<table class='countdown'><tr><td>" + days + "</td><td>" + hours + "</td><td>" + minutes + "</td><td>" + seconds + "</td></tr><tr><td> Tage </td><td> Stunden </td><td> Minuten </td><td> Sekunden </td></tr></table>";
 
 if (distance < 0 ) {
 	clearInterval(x);
@@ -22,12 +24,13 @@ var x = setInterval(function() {
 	var days = Math.floor(distance / (1000*60*60*24));
 	var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
 	var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-	document.getElementById("countdown").innerHTML = "Zähle mit uns:<table class='countdown'><tr><td>" + days + "</td><td>" + hours + "</td><td>" + minutes + "</td></tr><tr><td> Tage </td><td> Stunden </td><td> Minuten </td></tr></table>";
+	document.getElementById("countdown").innerHTML = "Zähle mit uns:<table class='countdown'><tr><td>" + days + "</td><td>" + hours + "</td><td>" + minutes + "</td><td>" + seconds + "</td></tr><tr><td> Tage </td><td> Stunden </td><td> Minuten </td><td> Sekunden </td></tr></table>";
 
 	if (distance < 0 ) {
 		clearInterval(x);
 		document.getElementById("countdown").innerHTML = "Die Party läuft bereits!"
 	}
 
-},60000);
+},1000);
