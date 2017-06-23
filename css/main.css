@@ -9,6 +9,7 @@ body {
 
 footer {
   color: white;
+<<<<<<< HEAD
 }
 
 
@@ -21,6 +22,8 @@ footer {
   margin-left: 50px;
   color: #9d9d9d;
   position: absolute;
+=======
+>>>>>>> 46149584b71873b5abf4d8a7294fb89e20b16dbb
 }
 
 .mainheader {
@@ -157,6 +160,22 @@ footer {
 
   .countdown {
   width: 550px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .artist-center-2 {
+    margin-left: 25%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .artist-center-1 {
+    margin-left: 16.5%;
   }
 
 }
