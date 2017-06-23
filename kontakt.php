@@ -54,24 +54,24 @@
             echo '<div class="alert alert-success" role="alert"><strong>Danke!</strong> Ihre nachricht wurde gesendet.</div>';
           }
         ?>
-        <form action="/mail.php" method="post">
+        <form action="mail.php" method="post">
           <div class="form-group loginform">
           <br>
           <div class="formfirst">
             <label for="name">Name*</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Name"><br>
+            <input type="text" class="form-control" name="name" id="name" maxlength="40" placeholder="Name" required><br>
             <label for="email">Email*</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email-Adresse"><br>
+            <input type="email" class="form-control" name="email" id="email" maxlength="70" placeholder="Email-Adresse" required><br>
           </div>
           <div class="formsecond">
             <label for="nachricht">Nachricht*</label>
-            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" placeholder='Schreiben Sie hier ihre Nachricht.'></textarea><br>
+            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" maxlength="800" placeholder='Schreiben Sie hier ihre Nachricht.' required></textarea><br>
             <button type="submit" class="btn btn-success">Senden</button>
           </div>
           </div>
         </form>
+        *Erforderliche Felder
       </div>
-      *Erforderliche Felder
     </div>
 
   <!--####### Back-to-top #######-->

@@ -82,21 +82,21 @@ mysqli_query( $connect, $create_database);
           if ($sum >= 300) {
         ?>
         <div class="alert alert-danger" role="alert"><strong>Tut uns leid!</strong> Die Tickets sind leider ausverkauft.</div>
-        <form action="/reservemail.php" method="post">
+        <form action="reservemail.php" method="post">
         <fieldset disabled>
           <div class="form-group loginform">
           <br>
           <div class="formfirst">
             <label for="name">Name*</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required><br>
+            <input type="text" class="form-control" name="name" id="name" maxlength="40" placeholder="Name" required><br>
             <label for="email">Email*</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email-Adresse" required><br>
+            <input type="email" class="form-control" name="email" id="email" maxlength="70" placeholder="Email-Adresse" required><br>
           </div>
           <div class="formsecond">
             <label for="name">Kartenanzahl*</label>
             <select class="form-control" name="amount" id="amount" placeholder="Kartenanzahl" required> <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select><br>
             <label for="nachricht">Nachricht</label>
-            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" placeholder='Schreiben Sie hier ihre Nachricht.'></textarea><br>
+            <textarea class="form-control" name="nachricht" id="nachricht" rows="5" maxlength="800" placeholder='Schreiben Sie hier ihre Nachricht.'></textarea><br>
             <button type="submit" class="btn btn-success">Senden</button>
           </div>
           </div>
@@ -105,7 +105,7 @@ mysqli_query( $connect, $create_database);
         <?php
           } else {
         ?>
-        <form action="/reservemail.php" method="post">
+        <form action="reservemail.php" method="post">
           <div class="form-group loginform">
           <br>
           <div class="formfirst">

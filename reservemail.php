@@ -40,5 +40,5 @@ $nachricht = "Es wurde eine Reservierung gesendet von: ".$name."\r\n \r\nEmail: 
 $header = "From: ".$myemail."\r\n Reply-To: ".$email_adresse;
 mail($an, $betreff, $nachricht, $header);
 sleep(1);
-header("Location:/reservierung.php?mailsent");
+header("Location:reservierung.php?mailsent");
 ?>
