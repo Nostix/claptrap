@@ -12,6 +12,7 @@ if(! $connect )
 $create_database = "CREATE TABLE IF NOT EXISTS karten (
             name VARCHAR(100),
             email TEXT,
+            message TEXT,
             amount INTEGER,
             postdate VARCHAR(60)
             )";
@@ -21,11 +22,12 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['amount'])) 
   $name = $_POST['name'];
   $email = $_POST['email'];
   $amount = $_POST['amount'];
+  $message = $_POST['nachricht'];
   date_default_timezone_set('Europe/Berlin');
-  $date = date('d/m/y h:i', time());
-  $add_query = $connect->prepare("INSERT INTO karten (name, email, amount, postdate)
-  VALUES (?, ?, ?, ?)");
-  $add_query->bind_param('ssss', $name,$email,$amount,$date);
+  $date = date('d/m/y H:i:s', time());
+  $add_query = $connect->prepare("INSERT INTO karten (name, email, message, amount, postdate)
+  VALUES (?, ?, ?, ?, ?)");
+  $add_query->bind_param('sssss', $name,$email,$message,$amount,$date);
   $add_query->execute();
 }
 

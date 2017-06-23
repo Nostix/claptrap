@@ -12,6 +12,7 @@ if(! $connect )
 $create_database = "CREATE TABLE IF NOT EXISTS karten (
             name VARCHAR(100),
             email TEXT,
+            message TEXT,
             amount INTEGER,
             postdate VARCHAR(60)
             )";
