@@ -49,14 +49,7 @@
 
 <div class="container">
       <!-- Example row of columns -->
-    <div class="panel panel-transparent">
-      
-
-      <!-- Example row of columns -->
-    <div class="panel panel-transparent">
-      <div class="panel-heading">
-        <h3>Impressum</h3>
-      </div>
+    
       <div class="panel-body">
       <div class="row">
         <div class="col-md-6">
@@ -66,8 +59,8 @@
         
       </div>
       </div>
-      </div>
-</div> <!--### container###-->
+      
+ <!--### container###-->
 
 
 
