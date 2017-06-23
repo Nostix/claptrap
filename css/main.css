@@ -7,11 +7,6 @@ body {
   
 }
 
-.blabla {
-  margin: 0px auto;
-
-}
-
 footer {
   color: white;
 }
@@ -150,6 +145,22 @@ footer {
 
   .countdown {
   width: 550px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .artist-center-2 {
+    margin-left: 25%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .artist-center-1 {
+    margin-left: 16.5%;
   }
 
 }

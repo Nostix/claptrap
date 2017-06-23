@@ -77,21 +77,21 @@
                 <small>Drummerrin</small>
                 </h3>
                 <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center artist-center-1">
+                  <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                  <h3>Tom Mustermann
+                    <small>Vocals</small>
+                  </h3>
+                  <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
                 </div> 
-                  <div class="col-lg-4 col-sm-6 text-center blabla">
-                    <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
-                    <h3>Tom Mustermann
-                      <small>Vocals</small>
-                    </h3>
-                    <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
-                  </div> 
-                  <div class="col-lg-4 col-sm-6 text-center blabla">
-                    <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
-                    <h3>Peter Mustermann
-                      <small>Gitarrist</small>
-                    </h3>
-                    <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
-                  </div>                                 
+                <div class="col-lg-4 col-sm-6 text-center artist-center-2">
+                  <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                  <h3>Peter Mustermann
+                    <small>Gitarrist</small>
+                  </h3>
+                  <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
+                </div>                               
               </div>
             </div>
           </div>
