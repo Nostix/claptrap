@@ -57,9 +57,44 @@
                 </div>
                 <div class="panel-body">
                 <p>Wir sind "Die Band die ich persönlich am besten finde" und spielen Rap-Rock im Style vom Hollywood Undead und Limp Bizkit. Wir haben unser erstes Album rausgebracht und spielen in der Umgebung unsere Songs. </p>
+               <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                <h3>Max Mustermann
+                <small>Bassist</small>
+                </h3>
+                <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
                 </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                <h3>Klaus Mustermann
+                <small>Vocals</small>
+                </h3>
+                <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
+                </div> 
+                <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                <h3>Maria Mustermann
+                <small>Drummerrin</small>
+                </h3>
+                <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
+                </div> 
+                  <div class="col-lg-4 col-sm-6 text-center blabla">
+                    <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                    <h3>Tom Mustermann
+                      <small>Vocals</small>
+                    </h3>
+                    <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
+                  </div> 
+                  <div class="col-lg-4 col-sm-6 text-center blabla">
+                    <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
+                    <h3>Peter Mustermann
+                      <small>Gitarrist</small>
+                    </h3>
+                    <p>Mit zarten Bässen bringt er die Crowd in´s schwingern!</p>
+                  </div>                                 
               </div>
             </div>
+          </div>
         </div>
 
 <!--####### Geschichte #######-->
