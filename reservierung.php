@@ -10,6 +10,7 @@ if(! $connect )
 }
 
 $create_database = "CREATE TABLE IF NOT EXISTS karten (
+            id INTEGER,
             name VARCHAR(100),
             email TEXT,
             message TEXT,
@@ -144,7 +145,7 @@ mysqli_query( $connect, $create_database);
       <hr>
 
       <footer>
-        <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a></p>
+        <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a> | <a href="admin.php">Admin-Bereich</a></p>
       </footer>
     </div> <!-- /container -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>

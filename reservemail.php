@@ -10,6 +10,7 @@ if(! $connect )
 }
 
 $create_database = "CREATE TABLE IF NOT EXISTS karten (
+            id INTEGER,
             name VARCHAR(100),
             email TEXT,
             message TEXT,
@@ -19,15 +20,28 @@ $create_database = "CREATE TABLE IF NOT EXISTS karten (
 mysqli_query( $connect, $create_database);
 
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['amount'])) {
+
+  $old_id = $connect->prepare("SELECT id FROM karten ORDER BY id DESC");
+  $old_id->execute();
+  $result = $old_id->get_result();
+  
+  if($result->num_rows === 0) {
+    $new_id = '1';
+  }
+  else {
+    $row = mysqli_fetch_array($result);
+    $new_id = ++$row[0];
+  }
+
   $name = $_POST['name'];
   $email = $_POST['email'];
   $amount = $_POST['amount'];
   $message = $_POST['nachricht'];
   date_default_timezone_set('Europe/Berlin');
-  $date = date('d/m/y H:i:s', time());
-  $add_query = $connect->prepare("INSERT INTO karten (name, email, message, amount, postdate)
-  VALUES (?, ?, ?, ?, ?)");
-  $add_query->bind_param('sssss', $name,$email,$message,$amount,$date);
+  $date = date('d/m/y H:i', time());
+  $add_query = $connect->prepare("INSERT INTO karten (id, name, email, message, amount, postdate)
+  VALUES (?, ?, ?, ?, ?, ?)");
+  $add_query->bind_param('ssssss', $new_id,$name,$email,$message,$amount,$date);
   $add_query->execute();
 }
 

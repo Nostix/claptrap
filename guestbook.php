@@ -10,6 +10,7 @@ if(! $connect )
 }
 
 $create_database = "CREATE TABLE IF NOT EXISTS guestbook (
+            id INTEGER,
             name VARCHAR(100),
             entry TEXT,
             postdate VARCHAR(60)
@@ -17,13 +18,26 @@ $create_database = "CREATE TABLE IF NOT EXISTS guestbook (
 mysqli_query( $connect, $create_database);
 
 if (isset($_POST['name']) && isset($_POST['nachricht'])) {
+
+  $old_id = $connect->prepare("SELECT id FROM guestbook ORDER BY id DESC");
+  $old_id->execute();
+  $result = $old_id->get_result();
+
+  if($result->num_rows === 0) {
+    $new_id = '1';
+  }
+  else {
+    $row = mysqli_fetch_array($result);
+    $new_id = ++$row[0];
+  }
+
   $name = $_POST['name'];
   $nachricht = $_POST['nachricht'];
   date_default_timezone_set('Europe/Berlin');
-  $date = date('d/m/y h:i', time());
-  $add_query = $connect->prepare("INSERT INTO guestbook (name, entry, postdate)
-  VALUES (?, ?, ?)");
-  $add_query->bind_param('sss', $name,$nachricht,$date);
+  $date = date('d/m/y H:i', time());
+  $add_query = $connect->prepare("INSERT INTO guestbook (id, name, entry, postdate)
+  VALUES (?, ?, ?, ?)");
+  $add_query->bind_param('ssss', $new_id,$name,$nachricht,$date);
   $add_query->execute();
 }
 
@@ -96,9 +110,9 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
             $result = $all_entrys->get_result();
 
             while($row = mysqli_fetch_array($result)) {
-              $name = $row[0];
-              $nachricht = $row[1];
-              $date = $row[2];
+              $name = $row[1];
+              $nachricht = $row[2];
+              $date = $row[3];
 
               echo '
 
@@ -134,7 +148,7 @@ if (isset($_POST['name']) && isset($_POST['nachricht'])) {
       <hr>
 
       <footer>
-        <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a></p>
+        <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a> | <a href="admin.php">Admin-Bereich</a></p>
       </footer>
     </div> <!-- /container -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
