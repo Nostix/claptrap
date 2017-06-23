@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+		 <link rel="icon" href="img/logo.ico" type="image/x-icon" />
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
