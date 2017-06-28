@@ -135,7 +135,7 @@
             {
               // Aktiviertes Bestellformular
               ?>
-              <p class="Reservierungstext">Hier kannst du Karten reservieren.<br />Sie werden an der Abendkasse auf deinen Namen hinterlegt sein.<br />Dort kannst du sie dann ab einer Stunde vor Konzertbeginn abholen.</p>
+              <p class="Reservierungstext">Hier kannst du Karten reservieren.<br />Sie werden an der Abendkasse auf deinen Namen hinterlegt sein.<br />Dort kannst du sie dann ab zwei Stunden vor Konzertbeginn abholen.<br />Hast du sie allerdings bis 20 Minuten vor Konzertbeginn noch nicht abgeholt, gehen die Tickets wieder in den freien Verkauf.</p>
               <form action="reservemail.php" method="post">
                 <div class="form-group LoginFormular">
                   <br />
