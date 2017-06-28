@@ -56,11 +56,11 @@ if (document.getElementById('map')) {
 
 
 //Scroll to first element
-if (document.getElementById('firstelement')) {
+if (document.getElementById('ScrollFunktion')) {
 window.wasScrolled = false;
     $(window).bind('scroll',function(){
         if (!window.wasScrolled) {
-            $('html, body').animate({scrollTop:document.getElementById('firstelement').getBoundingClientRect().top},1000)
+            $('html, body').animate({scrollTop:document.getElementById('ScrollFunktion').getBoundingClientRect().top},1000)
         }
         window.wasScrolled = true;
     })

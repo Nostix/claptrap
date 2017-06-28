@@ -11,22 +11,77 @@ footer {
   color: white;
 }
 
-.navbar-inverse{
+.Besucherzaehler {
+  float: right;
+}
+
+.Besucherhintergrund {
+  position: relative;
+}
+
+.navbar-inverse {
   border-color: #222;
 }
 
-#counter{
+#Besucherzaehler {
   margin-top: -23px;
   margin-left: 50px;
   color: #9d9d9d;
   position: absolute;
 }
 
-.mainheader {
+.Startbereich {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: larger;
+}
+
+.Reservierung {
+  background: none;
+  border: 3px solid #d9534f;
+  color: #d9534f;
+  font-size: large;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+.Reservierung:hover,
+.Reservierung:active {
+    color: #FFF;
+    background: #d2322d;
+}
+
+#ScrollFunktion {
+  margin-bottom: 75px;
+}
+
+.panel-transparent {
+  margin-top: 40px;
+  background: none;
+  border-color: transparent;
+  color: white;
+}
+
+.panel-transparent .panel-heading{
+  border-color: transparent;
+  background: rgba(122, 130, 136, 0.8)!important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.panel-transparent .panel-heading h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.panel-transparent .panel-body{
+  border-color: transparent;
+  background: rgba(46, 51, 56, 0.8)!important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .gaestebuch_header {
@@ -134,24 +189,6 @@ footer {
   height: auto;
 }
 
-.btn-outlined {
-  font-size: large;
-    border-radius: 0;
-    -webkit-transition: all 0.3s;
-       -moz-transition: all 0.3s;
-            transition: all 0.3s;
-}
-
-.btn-outlined.btn-danger {
-    background: none;
-    border: 3px solid #d9534f;
-    color: #d9534f;
-}
-.btn-outlined.btn-danger:hover,
-.btn-outlined.btn-danger:active {
-    color: #FFF;
-    background: #d2322d;
-}
 
 /* ------------------- Carousel Styling ------------------- */
 
@@ -178,15 +215,15 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-  .imagecarousel {
+  .BilderSlideshow {
      padding: 24px 0;
   }
 
-  .btn-outlined {
+  .Reservierung {
     font-size: 32px;
   }
 
-  .mainheader {
+  .Startbereich {
     font-size: xx-large;
   }
 
@@ -234,7 +271,7 @@ footer {
 
 @media screen and (min-width: 992px) {
 
-  .frontimages {
+  .StartBilder {
     max-width: 930px;
   }
 

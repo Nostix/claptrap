@@ -35,9 +35,10 @@
 		<script src="js/cookies.js"></script>
   </head>
   <body>
-
+<!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
+      <!-- Navigation für Mobile Geräte -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Mobile Navigation</span>
@@ -47,6 +48,7 @@
           </button>
           <a class="navbar-brand" href="index.php">Claptrap</a>
         </div>
+        <!-- Eigentliche Navigation -->
 		    <div class="collapse navbar-collapse" id="navbar">
 		      <ul class="nav navbar-nav">
             <li><a href="about.php">Band</a></li>
@@ -64,35 +66,38 @@
         </div>
       </div>
     </nav>
-
-    <div style="float: right;">
-      <img style="position: relative;" src="img/overlaybesucherzahler.png">
+    <!-- Besucherzähler -->
+    <div class="Besucherzaehler">
+      <img class="Besucherhintergrund" src="img/overlaybesucherzahler.png">
       <?php include ("counter.php"); ?>
     </div>
-
+    <!-- Startbereich mit Countdown und Reservierung -->
     <div class="container" style="margin-top:20px;">
       <div class="jumbotron">
         <div class="container">
-          <h1 class="mainheader">Claptrap</h1>
-          <h2 class="mainheader" id="countdown"></h2>
+          <h1 class="Startbereich">Claptrap</h1>
+          <h2 class="Startbereich" id="countdown"></h2>
           <script src="js/countdown.js"></script>
-		      <div class="ticket-button mainheader">
+		      <div class="Startbereich">
             <p>
-              <a href="reservierung.php" class="btn btn-outlined btn-danger">Jetzt Karten reservieren!</a>
+              <a href="reservierung.php" class="btn Reservierung">Jetzt Karten reservieren!</a>
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div id="firstelement" style="margin-bottom: 75px;"></div>
-    <div class="imagecarousel">
-      <div class="container frontimages">
-        <div id="frontimages" class="carousel slide" data-ride="carousel">
+    <!-- Bilder Slideshow -->
+    <div id="ScrollFunktion"></div>
+    <div class="BilderSlideshow">
+      <div class="container StartBilder">
+        <div id="StartBilder" class="carousel slide" data-ride="carousel">
+          <!-- Punkte/Positionsanzeige -->
           <ol class="carousel-indicators">
-            <li data-target="#frontimages" data-slide-to="0" class="active"></li>
-            <li data-target="#frontimages" data-slide-to="1"></li>
-            <li data-target="#frontimages" data-slide-to="2"></li>
+            <li data-target="#StartBilder" data-slide-to="0" class="active"></li>
+            <li data-target="#StartBilder" data-slide-to="1"></li>
+            <li data-target="#StartBilder" data-slide-to="2"></li>
           </ol>
+          <!-- Bilder -->
           <div class="carousel-inner">
             <div class="item active">
               <img src="img/1.jpg" alt="...">
@@ -104,16 +109,17 @@
                 <img src="img/3.jpg" alt="...">
             </div>
           </div>
-          <a class="left carousel-control" href="#frontimages" data-slide="prev">
+          <!-- Bilder Navigation -->
+          <a class="left carousel-control" href="#StartBilder" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
-          <a class="right carousel-control" href="#frontimages" data-slide="next">
+          <a class="right carousel-control" href="#StartBilder" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
       </div>
     </div>
-
+    <!-- Infos -->
     <div class="container">
       <div class="panel panel-transparent">
         <div class="panel-heading">
@@ -125,7 +131,6 @@
           <p> Es wird für alles gesorgt, Getränke und Snacks gibt es drinnen und wer bock auf Warmes hat, kann sich draußen was vom Grillstand holen.</p>
         </div>
       </div>
-
       <div class="panel panel-transparent">
         <div class="panel-heading">
           <h3>Infos</h3>
@@ -144,11 +149,9 @@
           </div>
         </div>
       </div>
-      
+      <!-- Back to Top Button -->
       <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
       <hr>
-
       <footer>
         <p>&copy; Nostix Code 2k17 | <a href="impressum.php">Impressum</a> | <a href="admin.php">Admin-Bereich</a></p>
       </footer>
