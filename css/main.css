@@ -26,7 +26,7 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: x-large;
+  font-size: larger;
 }
 
 .gaestebuch_header {
@@ -44,7 +44,7 @@ footer {
 }
 
 .countdown {
-  width: 280px;
+  width: 100%;
   margin: 10px auto;
 }
 
@@ -135,7 +135,7 @@ footer {
 }
 
 .btn-outlined {
-  font-size: x-large;
+  font-size: large;
     border-radius: 0;
     -webkit-transition: all 0.3s;
        -moz-transition: all 0.3s;
