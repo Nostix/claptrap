@@ -1,15 +1,31 @@
+<!--
+/********************************************************
+* Dateiname: reservemail.php
+* Autor: Nostix Code
+* letzte Aenderung: 28.06.2017
+* Inhalt: Kartenreservierungsprozess
+*
+* Verwendete Funktionen (aus anderen Dateien):
+*   /
+*   
+*
+* Definierte Funktionen:
+*   /
+********************************************************/
+-->
+<!-- Datenbank verbindung herstellen -->
 <?php
-$dbhost = 'localhost';
-$dbuser = 'php';
-$dbpass = 'php';
-$dbname = 'php';
-$connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-if(! $connect )
-{
-  die('Could not connect: ' . mysql_error());
-}
-
-$create_database = "CREATE TABLE IF NOT EXISTS karten (
+  $DB_HOST = 'localhost';
+  $DB_BENUTZER = 'php';
+  $DB_PASSWORT = 'php';
+  $DB_NAME = 'php';
+  $DB_Verbindung = mysqli_connect($DB_HOST, $DB_BENUTZER, $DB_PASSWORT, $DB_NAME);
+  if(! $DB_Verbindung )
+  {
+    die('Could not connect: ' . mysql_error());
+  }
+  // Erstellen der Tabelle falls noch nicht existent
+  $DatenbankErstellen = "CREATE TABLE IF NOT EXISTS karten (
             id INTEGER,
             name VARCHAR(100),
             email TEXT,
@@ -17,43 +33,42 @@ $create_database = "CREATE TABLE IF NOT EXISTS karten (
             amount INTEGER,
             postdate VARCHAR(60)
             )";
-mysqli_query( $connect, $create_database);
-
-if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['amount'])) {
-
-  $old_id = $connect->prepare("SELECT id FROM karten ORDER BY id DESC");
-  $old_id->execute();
-  $result = $old_id->get_result();
-  
-  if($result->num_rows === 0) {
-    $new_id = '1';
+  mysqli_query( $DB_Verbindung, $DatenbankErstellen);
+  // Wenn Parameter gegeben Reservierungsprozess
+  if (isset($_POST['Name']) && isset($_POST['Email']) && isset($_POST['Kartenanzahl']))
+  {
+    $AlteID = $DB_Verbindung->prepare("SELECT id FROM karten ORDER BY id DESC");
+    $AlteID->execute();
+    $Ergebnis = $AlteID->get_result();
+    // Errechnung der Neuen ID anhand der höchsten schon vorhandenen ID
+    if($Ergebnis->num_rows === 0)
+    {
+      $NeueID = '1';
+    }
+    else
+    {
+      $Reihe = mysqli_fetch_array($result);
+      $NeueID = ++$Reihe[0];
+    }
+    $Name = $_POST['Name'];
+    $Email = $_POST['Email'];
+    $Kartenanzahl = $_POST['Kartenanzahl'];
+    $Nachricht = $_POST['Nachricht'];
+    date_default_timezone_set('Europe/Berlin');
+    $Datum = date('d/m/y H:i', time());
+    // Eintragen der Reservierung in die Datenbank
+    $ZurDatenbankHinzufügen = $DB_Verbindung->prepare("INSERT INTO karten (id, name, email, message, amount, postdate)
+    VALUES (?, ?, ?, ?, ?, ?)");
+    $ZurDatenbankHinzufügen->bind_param('ssssss', $NeueID,$Name,$Email,$Nachricht,$Kartenanzahl,$Datum);
+    $ZurDatenbankHinzufügen->execute();
+    //Senden einer Email-Benachrichtigung
+    $MeineEmail = 'mail@nostix.de';
+    $An = $MeineEmail;
+    $Betreff = 'Kartenreservierung von: '.$Name;
+    $EmailNachricht = "Es wurde eine Reservierung gesendet von: ".$Name."\r\n \r\nEmail: ".$Email."\r\n \r\nNachricht: \r\n".$Nachricht;
+    mail($An, $Betreff, $EmailNachricht);
+    sleep(1);
+    // Nach Erfolg, Umleitung
+    header("Location:reservierung.php?mailsent");
   }
-  else {
-    $row = mysqli_fetch_array($result);
-    $new_id = ++$row[0];
-  }
-
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $amount = $_POST['amount'];
-  $message = $_POST['nachricht'];
-  date_default_timezone_set('Europe/Berlin');
-  $date = date('d/m/y H:i', time());
-  $add_query = $connect->prepare("INSERT INTO karten (id, name, email, message, amount, postdate)
-  VALUES (?, ?, ?, ?, ?, ?)");
-  $add_query->bind_param('ssssss', $new_id,$name,$email,$message,$amount,$date);
-  $add_query->execute();
-}
-
-$myemail = 'mail@nostix.de';
-$name = $_POST['name'];
-$email_adresse = $_POST['email'];
-$anzahl = $_POST['amount'];
-$nachricht = $_POST['nachricht'];
-$an = $myemail;
-$betreff = 'Kartenreservierung von: '.$name;
-$nachricht = "Es wurde eine Reservierung gesendet von: ".$name."\r\n \r\nEmail: ".$email_adresse."\r\n \r\nNachricht: \r\n".$nachricht;
-mail($an, $betreff, $nachricht);
-sleep(1);
-header("Location:reservierung.php?mailsent");
 ?>
