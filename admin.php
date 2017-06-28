@@ -13,6 +13,7 @@
 *   /
 ********************************************************/
 -->
+<!-- Datenbank verbindung herstellen -->
 <?php session_start(); 
   $DB_HOST = 'localhost';
   $DB_BENUTZER = 'php';
@@ -24,26 +25,27 @@
   {
     die('Could not connect: ' . mysql_error());
   }
-
+  // Benutzer festlegen
   $ADMIN_BENUTZER = 'admin';
   $ADMIN_PASSWORT = 'admin';
   $ADMIN_VERSCHLUESSELT = password_hash($ADMIN_PASSWORT, PASSWORD_BCRYPT);
-
+  // Überprüfen ob Benutzer und Password eingegeben wurden
   if (isset($_POST['Benutzer']) && isset($_POST['Passwort']))
   {
     $Benutzer = $_POST['Benutzer'];
     $Passwort = $_POST['Passwort'];
-
+    // Wenn ja, Session Cookie setzen
     if (password_verify($Passwort, $ADMIN_VERSCHLUESSELT) && $Benutzer === $ADMIN_BENUTZER)
     {
   	 $_SESSION['Angemeldet'] = 'true';
     }
+    // Wenn nein, Session Cookie setzen
     else
     {
   	 $_SESSION['FalscheDaten'] = 'true';
     }
   }
-
+  // Löschvorgang für Reservierungen
   if (isset($_POST['Reservierung_Loeschen']))
   {
     $_POST['Reservierungen'] = 'true';
@@ -52,7 +54,7 @@
     $loeschen->bind_param('s', $zu_loeschen);
     $loeschen->execute();
   }
-
+  //Löschvorgang für Gästebucheinträge
   if (isset($_POST['Eintrag_Loeschen']))
   {
     $_POST['Gaestebuch'] = 'true';
@@ -61,7 +63,7 @@
     $loeschen->bind_param('s', $zu_loeschen);
     $loeschen->execute();
   }
-
+  // Abmeldevorgang
   if (isset($_POST['Abmelden']))
   {
     unset($_SESSION['Angemeldet']);
@@ -132,14 +134,17 @@
         </div>
         <div class="panel-body">
           <?php
+            // Anzeigen wenn nicht angemeldet
             if (!isset($_SESSION['Angemeldet']))
             { 
+              // Anzeigen wenn Session Cookie für falsche Anmeldedaten gesetzt ist
               if(isset($_SESSION['FalscheDaten']))
               {
           		  echo '<div class="alert alert-danger" role="alert"><strong>Falsche Anmeldedaten!</strong> Bitte versuchen Sie es erneut, mit den richtigen Anmeldedaten.</div>';
           		  unset($_SESSION['FalscheDaten']);
               }
           ?>
+          <!-- Anmeldeformular -->
           <form action="admin.php" method="post">
             <div class="form-group LoginFormular">
               <div class="ResponsiveFormularLinks admintext">
@@ -160,6 +165,7 @@
             else
             { 
             ?>
+              <!-- Auswahlformular für die Bearbeitung -->
               <p>Wählen Sie aus, was Sie bearbeiten wollen:
               <form action="admin.php" method="post">
                 <button type="submit" name="Gaestebuch" class="btn btn-primary">Gästebucheintrage</button>
@@ -168,12 +174,14 @@
                 <button type="submit" name="Reservierungen" class="btn btn-primary">Bestellungen</button>
               </form><br />
               <?php
+              // Anzeigen wenn Gästebuch bearbeitet werden soll
               if(isset($_POST['Gaestebuch']))
               {
+                // Alle Einträge aus Gästebuch datenbank abrufen, neuste zuerst
                 $Alle_Eintraege = $DB_Verbindung->prepare("SELECT * FROM guestbook ORDER BY id DESC");
                 $Alle_Eintraege->execute();
                 $Ergebnis = $Alle_Eintraege->get_result();
-
+                // Für jeden Eintrag folgendes HTML mit spezifischen Variablen ausgeben
                 while($Reihen = mysqli_fetch_array($Ergebnis))
                 {
                   $ID = $Reihen[0];
@@ -195,13 +203,14 @@
                   ';
                 }
               }
-
+              // Anzeigen wenn Reservierungen bearbeitet werden sollen
               if(isset($_POST['Reservierungen']))
               {
-                $Alle_Reservierungen = $DB_Verbindung->prepare("SELECT * FROM karten ORDER BY id ASC");
+                // Alle Reservierungen aus der Datenbank abrufen, neuste zuerst
+                $Alle_Reservierungen = $DB_Verbindung->prepare("SELECT * FROM karten ORDER BY id DESC");
                 $Alle_Reservierungen->execute();
                 $Ergebnis = $Alle_Reservierungen->get_result();
-
+                // Tabellenanfang zur Darstellung aller Reservierungen ausgeben
                 echo '
                   <table class="table admintable">
             		    <tr>
@@ -213,6 +222,7 @@
 	            	      <th class="AdminTabelleZelle6">Löschen</th>
                     </tr>
                 ';
+                // Für jede Reservierung folgendes HTML ausgeben mit spezifischen Variablen
                 while($Reihen = mysqli_fetch_array($Ergebnis)) {
                   $ID = $Reihen[0];
                   $Name = $Reihen[1];
@@ -231,7 +241,8 @@
                   		<td class="AdminTabelleZelle6"><form action="admin.php" method="post" style="display: inline-block;"><button name="Reservierung_Loeschen" value="'.$ID.'" class="btn btn-xs btn-danger">Löschen</button></form></td>
                   	</tr>
                   ';
-                } 
+                }
+                // Tabeller wieder schließen
                 echo '</table>';
               }
             }
