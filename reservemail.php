@@ -47,7 +47,7 @@
     }
     else
     {
-      $Reihe = mysqli_fetch_array($result);
+      $Reihe = mysqli_fetch_array($Ergebnis);
       $NeueID = ++$Reihe[0];
     }
     $Name = $_POST['Name'];
