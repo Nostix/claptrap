@@ -79,7 +79,7 @@
           ?>
           <!-- Kontaktformular -->
           <form action="mail.php" method="post">
-            <div class="form-group loginform">
+            <div class="form-group LoginFormular">
               <br />
               <div class="ResponsiveFormularLinks">
                 <label for="Name">Name*</label>
