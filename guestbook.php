@@ -33,10 +33,10 @@
               )";
   mysqli_query( $DB_Verbindung, $DatenbankErstellen);
   // Überprüfen ob Parameter gegeben sind
-  if (isset($_POST['name']) && isset($_POST['nachricht']))
+  if (isset($_POST['Name']) && isset($_POST['Nachricht']))
   {
     // Errechnung der neuen ID aus der letzten ID
-    $AlteID = $connect->prepare("SELECT id FROM guestbook ORDER BY id DESC");
+    $AlteID = $DB_Verbindung->prepare("SELECT id FROM guestbook ORDER BY id DESC");
     $AlteID->execute();
     $Ergebnis = $AlteID->get_result();
 
@@ -123,22 +123,22 @@
             </form><br><br>
             <?php
             // Darstellung aller Gästebucheinträge sortiert nach Datum, neuste zuerst
-            $all_entrys = $connect->prepare("SELECT * FROM guestbook ORDER BY postdate DESC");
-            $all_entrys->execute();
-            $result = $all_entrys->get_result();
+            $AlleEintraege = $DB_Verbindung->prepare("SELECT * FROM guestbook ORDER BY postdate DESC");
+            $AlleEintraege->execute();
+            $Ergebnis = $AlleEintraege->get_result();
 
-            while($row = mysqli_fetch_array($result)) {
-              $name = $row[1];
-              $nachricht = $row[2];
-              $date = $row[3];
+            while($Reihe = mysqli_fetch_array($Ergebnis)) {
+              $Name = $Reihe[1];
+              $Nachricht = $Reihe[2];
+              $Datum = $Reihe[3];
 
               echo '
 
                 <div class="panel panel-transparent">
                   <div class="panel-heading">
-                    <div class="gaestebuch_header">'.$name.'</div><div class="gaestebuch_header date">'.$date.'</div>
+                    <div class="Gaestebuch_Titel">'.$Name.'</div><div class="Gaestebuch_Titel Datum">'.$Datum.'</div>
                   </div>
-                  <div class="panel-body"><p>'.$nachricht.'</p></div>
+                  <div class="panel-body"><p>'.$Nachricht.'</p></div>
                 </div>
               ';
             } 
