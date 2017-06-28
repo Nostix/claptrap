@@ -19,6 +19,9 @@ if (isset($_POST['user']) && isset($_POST['password'])) {
   if (password_verify($password, $admin_encrypt) && $user === $admin_user) {
   	$_SESSION['loggedin'] = 'true';
   }
+  else {
+  	$_SESSION['loginfail'] = 'true';
+  }
 }
 if (isset($_POST['delete_reservation'])) {
   $_POST['orders'] = 'true';
@@ -99,7 +102,11 @@ if (isset($_POST['logout'])) {
       </div>
       <div class="panel-body">
       <?php
-          if (!isset($_SESSION['loggedin'])) { ?>
+          if (!isset($_SESSION['loggedin'])) { 
+          	if(isset($_SESSION['loginfail'])) {
+          		echo '<div class="alert alert-danger" role="alert"><strong>Falsche Anmeldedaten!</strong> Bitte versuche es erneut, mit den richtigen Anmeldedaten.</div>';
+          		unset($_SESSION['loginfail']);
+          	}?>
         <form action="admin.php" method="post">
           <div class="form-group loginform">
           <div class="formfirst admintext">
