@@ -84,7 +84,7 @@ footer {
   border-bottom-right-radius: 5px;
 }
 
-.gaestebuch_header {
+.Gaestebuch_Titel {
   margin: 0px auto;
   display: inline-block;
 
@@ -94,7 +94,7 @@ footer {
   float: left;
 }
 
-.date {
+.Datum {
   float: right;
 }
 
@@ -127,44 +127,44 @@ footer {
   table-layout: fixed;
 }
 
-.at1 {
+.AdminTabelleZelle1 {
   width: 15%
 }
 
-.at2 {
+.AdminTabelleZelle2 {
   width: 25%
 }
 
-.at3 {
+.AdminTabelleZelle3 {
   width: 35%
 }
 
-.at4 {
+.AdminTabelleZelle4 {
   width: 8%
 }
 
-.at5 {
+.AdminTabelleZelle5 {
   width: 10%
 }
 
-.at6 {
+.AdminTabelleZelle6 {
   width: 10%
 }
 
-.formfirst {
+.ResponsiveFormularLinks {
   text-align: center;
   flex: 1;          
   min-width: 200px;
 }
 
-.formfirst input,.formfirst p,
-.formsecond select,.formsecond textarea,
-.formsecond input {
+.ResponsiveFormularLinks input,.ResponsiveFormularLinks p,
+.ResponsiveFormularRechts select,.ResponsiveFormularRechts textarea,
+.ResponsiveFormularRechts input {
   margin: auto;
   max-width: 80%;
 }
 
-.formsecond {
+.ResponsiveFormularRechts {
   padding-top: auto;
   padding-bottom: auto;
   text-align: center;
@@ -172,7 +172,7 @@ footer {
   min-width: 200px;
 }
 
-.loginform {
+.LoginFormular {
   display: flex;
   flex-wrap: wrap;
 }
@@ -239,7 +239,7 @@ footer {
     margin-left: 25%;
   }
 
-  .at3 {
+  .AdminTabelleZelle3 {
     display: none;
   }
 
@@ -255,15 +255,19 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  .at3 {
+  .AdminTabelleZelle2 {
     display: none;
   }
 
-  .at2 {
+  .AdminTabelleZelle3 {
     display: none;
   }
 
-  .at5 {
+  .AdminTabelleZelle5 {
+    display: none;
+  }
+
+  #GaestebuchDatum {
     display: none;
   }
 

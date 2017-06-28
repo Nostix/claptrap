@@ -100,13 +100,13 @@
           <!-- Bilder -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="img/1.jpg" alt="...">
+              <img src="img/1.jpg" alt="Bild Nummer 1">
             </div>
             <div class="item">
-                <img src="img/2.jpg" alt="...">
+                <img src="img/2.jpg" alt="Bild Nummer 2">
             </div>
             <div class="item">
-                <img src="img/3.jpg" alt="...">
+                <img src="img/3.jpg" alt="Bild Nummer 3">
             </div>
           </div>
           <!-- Bilder Navigation -->
