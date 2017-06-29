@@ -72,14 +72,14 @@
           <h4>„Rap-Rock zum abgehen“</h4>
         </div>
         <div class="panel-body">
-          <p>Wir sind "Die Band die ich persönlich am besten finde" und spielen Rap-Rock im Style vom Hollywood Undead und Limp Bizkit. Wir haben unser erstes Album rausgebracht und spielen in der Umgebung unsere Songs.</p><br />
+          <p>Wir sind "Claptrap" und spielen Rap-Rock im Style vom Hollywood Undead und Limp Bizkit. Wir haben unser erstes Album rausgebracht und spielen in der Umgebung unsere Songs.</p><br />
           <!-- Bandmitglied 1 -->
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
             <h3>Max Mustermann
               <small>Bassist</small>
             </h3>
-            <p>Mit zarten Bässen bringt er die Crowd in´s schwingen!</p>
+            <p>Mit zarten Bässen bringt er das Publikum in´s Schwingen!</p>
           </div>
           <!-- Bandmitglied 2 -->
           <div class="col-lg-4 col-sm-6 text-center">
@@ -87,7 +87,7 @@
             <h3>Klaus Mustermann
               <small>Vocals</small>
             </h3>
-              <p>Mit seiner Stimme bringt er die Crowd in´s schwingen!</p>
+              <p>Seine Stimme verf&uuml;hrt die Zuhörer des öfteren dazu, das Tanzbein mitzuschwingen!</p>
           </div>
           <!-- Bandmitglied 3 -->
           <div class="col-lg-4 col-sm-6 text-center">
@@ -95,7 +95,7 @@
             <h3>Maria Mustermann
               <small>Drummerrin</small>
             </h3>
-            <p>Mit ihren Drums bringt sie die Crowd in´s schwingen!</p>
+            <p>Mit ihren Drumms lässt sie die Herzen der Fans schneller schlagen!</p>
           </div>
           <!-- Bandmitglied 4 -->
           <div class="col-lg-4 col-sm-6 text-center artist-center-1">
@@ -103,7 +103,7 @@
             <h3>Tom Mustermann
               <small>Vocals</small>
             </h3>
-            <p>Mit seiner Stimme bringt er die Crowd in´s schwingen!</p>
+            <p> Mit seiner wundervollen Stimme verzaubert er das Publikum in seinen Bann!</p>
           </div>
           <!-- Bandmitglied 5 -->
           <div class="col-lg-4 col-sm-6 text-center artist-center-2">
@@ -111,7 +111,7 @@
             <h3>Peter Mustermann
               <small>Gitarrist</small>
             </h3>
-            <p>Mit Akkorden bringt er die Crowd in´s schwingen!</p>
+            <p>Mit Akkorden bringt er alle zum Tanzen!</p>
           </div>                               
         </div>
       </div>
@@ -122,7 +122,7 @@
         </div>
         <div class="panel-body">
           <h2>Gründung</h2>
-          <p>Wir haben uns 2013 durch die Schulband getroffen. Nach der Schule haben wir uns entschieden weiter als Band zu spielen. Wir haben früh gemerkt, dass wir ein gemeinsames Musik interesse haben und haben uns entschieden Rap-Rock zu machen. Zu unseren Vorbildern gehören Bands wie Hollywood Undead, Limp Bizkit und Thousand Foot Krutch. Unsere ersten Konzerte waren in der Schule auf dem Musikabend. Wir hatten recht früh viele Fans. Die meisten natürlich Schulfreunde, aber auch Leute aus anderen Schulen kamen zu unseren Schulkonzerten. Der Vater von (    ) hat ein eigenes Tonstudio. Dies war natürlich perfekt für uns. Also machten wir erst unsere erste LP und dann kamm auch schon die EP. Wir wurden immer bekannte und haben auftritte in Jungendzentren gehabt und unsere größten Erfolge war die Auftritte 2015 beim Rock ' Rose in Uetersen und 2016 auf dem Acker Festival in Kummerfeld.</p>
+          <p>Wir haben uns 2013 durch die Schulband getroffen. Nach der Schule haben wir uns entschieden weiter als Band zu spielen. Wir haben früh gemerkt, dass wir ein gemeinsame Musik-Interesse haben und haben uns entschieden Rap-Rock zu machen. Zu unseren Vorbildern gehören Bands wie Hollywood Undead, Limp Bizkit und Thousand Foot Krutch. Unsere ersten Konzerte waren in der Schule auf dem Musikabend. Wir hatten recht früh viele Fans. Die meisten natürlich Schulfreunde, aber auch Leute aus anderen Schulen kamen zu unseren Schulkonzerten. Der Vater von (    ) hat ein eigenes Tonstudio. Dies war natürlich perfekt für uns. Also machten wir erst unsere erste LP und dann kamm auch schon die EP. Wir wurden immer bekannte und haben auftritte in Jungendzentren gehabt und unsere größten Erfolge war die Auftritte 2015 beim Rock ' Rose in Uetersen und 2016 auf dem Acker Festival in Kummerfeld.</p>
         </div>
       </div>
       <!-- Back to Top Button -->

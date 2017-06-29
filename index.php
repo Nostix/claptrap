@@ -126,9 +126,8 @@
           <h3>Wann? Wo? Was?</h3>
         </div>
         <div class="panel-body">
-          <p>Ihr habt bock uns Live zu sehen? Am <b>4. Juli</b> sind den ganzen Abend im Kinder- Jugendhaus Krükaupark Elmshorn!
-          Der Eintritt kostet <b>4,99€</b> und einlass ist um <b>18:30</b> </p>
-          <p> Es wird für alles gesorgt, Getränke und Snacks gibt es drinnen und wer bock auf Warmes hat, kann sich draußen was vom Grillstand holen.</p>
+          <p>Ihr habt bock uns Live zu sehen? Am <b>4. Juli</b> sind den ganzen Abend im Kinder-Jugendhaus Krückaupark Elmshorn! Der Eintritt kostet <b>4,99€</b> und Einlass ist um <b>18:30</b> </p>
+          <p> Es wird für alles gesorgt! Getränke und Snacks gibt es im Innenbereich und wem lieber nach etwas Warmes zumute ist, der kann sich draußen am Grillstand satt essen.</p>
         </div>
       </div>
       <div class="panel panel-transparent">
@@ -138,13 +137,13 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-md-6">
-              <h2>Kinder- Jugendhaus Krückaupark Elmshorn</h2>
-              <p>Das Kinder- Jugendhaus Krückaupark Elmshorn ist eine großartige Location für Junge leute. Man kann sich dort nach der Schule oder einfach so am Abend treffen und mit Freunden chillen. Es gibt genügend beschäftigungen wie Tischkicker, Billiard, Fußball und mehr. Außerdem bieten sie auch tolle ausfahrten und Events an. <b> Ihr solltet echt mal vorbeischauen. </b>  </p>
-              <p><a class="btn btn-default" href="#" role="button">Zur Homepage &raquo;</a></p>
+              <h2>Kinder-Jugendhaus Krückaupark Elmshorn</h2>
+              <p>Das Kinder-Jugendhaus Krückaupark Elmshorn ist eine großartige Location für junge Leute. Man kann sich dort nach der Schule oder einfach so am Abend treffen und mit Freunden Zeit verbringen. Es gibt genügend Beschäftigungen wie Tischkicker, Billiard, Fußball und mehr. Außerdem bieten Sie auch tolle Ausfahrten und Events an. <b> Ihr solltet echt mal vorbeischauen. </b>  </p>
+              <p><a class="btn btn-default" href="http://www.elmshorn.de/INTERNET/Kultur-Freizeit/Freizeit/Freizeitangebote-f%C3%BCr-Kinder-und-Jugendliche/Kinder-und-Jugendh%C3%A4user/index.php?La=1&NavID=2054.109&object=tx,1981.5079.1&kat=&kuo=2&sub=0" role="button">Zur Homepage &raquo;</a></p>
             </div>
             <div class="col-md-6">
               <h2>Unsere Sponsoren?</h2>
-              <p>Vielen Dank an das Kinder- Jugendhaus Krückaupark Elmshorn für die Bereitstellung der Location und der Snack / Getränke.<br />Ein großes dankeschön geht auch an Roland Würstchen für den Grillwagen. Unsere weiteren Sponsoren sind die Stadtwerke Elmshorn, Musikschule Elmshorn und Peter Kölln.</p>
+              <p>Vielen Dank an das Kinder-Jugendhaus Krückaupark Elmshorn für die Bereitstellung der Location und der Snack / Getränke.<br />Ein großes Dankeschön geht auch an Roland Würstchen für den Grillwagen. Unsere weiteren Sponsoren sind die Stadtwerke Elmshorn, Musikschule Elmshorn und Peter Kölln.</p>
             </div>
           </div>
         </div>
