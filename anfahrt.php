@@ -69,23 +69,27 @@
     <div class="container">
       <div class="panel panel-transparent">
         <div class="panel-heading">
-          <h3>Anfahrts-Karte</h3>
+          <h3>Location</h3>
         </div>
         <div class="panel-body">
-          <h1>Anfahrt</h1>
-          <p class="lead">Wo findet denn die Party statt? Natürlich im Jugendhaus Elmshorn! <b>Zum Krückaupark 5A 25337 Elmshorn</b></p>
-          <p><b>Es gibt gen&uuml;gend Parkplätze.</b> Das Jugendhaus ist direkt neben der Schwimhalle und dem Kr&uuml;ckaustadion.</p>
+          <p class="lead">Unser erster Auftitt wird im Jugendhaus Elmshorn stattfinden!</p> 
+          <p>Ihr findest das Jungedhaus Elshorn hier: <b>Zum Kr&uuml;ckaupark 5A 25337 Elmshorn</b></p>
+        </div>
           <div class="panel panel-transparent">
             <div class="panel-heading">
               <h3>Der Weg vom Bahnhof</h3>
             </div>
             <div class="panel-body">
-              <p>F&uuml;r den Fußweg vom Bahnhof m&uuml;sst Ihr ca. 15min einplanen.<br />Der Weg beginnt auf der Rechten Seite des Bahnhofes (nicht richtung Stadtkern). Einfach die M&uuml;hlenstraße bis zum Ende entlanglaufen, dann über die Ampel gehen und rechts halten. Die Langelohe Str. solange entlanglaufen, bis Ihr kurz vor der Kreuzung auf der linken Seite einen Sandweg findet, der in ein Waldstück f&uuml;. Diesen Weg m&uuml;sst Ihr bis zum Ende folgen. Ihr werdet an einer Turnhalle vorbeikommen und auch die Schwimmhalle sehen. Geht an der Schwimhalle vorbei, direkt auf das erste Haus hinzu! Direktd daneben ist das Jugendhaus.</p>
+              <p>F&uuml;r den Fußweg vom Bahnhof m&uuml;sst Ihr ca. 15min einplanen.<br />Der Weg beginnt auf der Rechten Seite des Bahnhofes (nicht Richtung Stadtkern). Von hier aus msst Ihr die M&uuml;hlenstraße bis zum Ende entlanglaufen, dann die Ampel &uuml;berqueren und rechts halten. Im Anschluss gelangt ihr zur Langelohe Straße, welche ihr solange entlanglaufen m&uuml;sst, bis Ihr kurz vor der Kreuzung auf der linken Seite einen Sandweg findet, der in ein Waldst&uuml;ck f&uuml;hrt. Diesen Weg m&uuml;sst Ihr bis zum Ende folgen. Ihr werdet an einer Turnhalle vorbeikommen und auch die Schwimmhalle sehen. Geht an der Schwimhalle vorbei, direkt auf das erste Haus hinzu, daneben ist das Jugendhaus.</p>
             </div>
-          </div>
+            </div>
           <!-- Google Map -->
-          <div id="map"></div>
-        </div>
+          <div class="panel-heading">
+           <h3>Anfahrt</h3>
+          </div>
+          <div class="panel-body">
+            <div id="map"></div>
+          </div>  
       </div>
       <!-- Back to Top Button -->
       <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>

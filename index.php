@@ -123,27 +123,32 @@
     <div class="container">
       <div class="panel panel-transparent">
         <div class="panel-heading">
-          <h3>Wann? Wo? Was?</h3>
+          <h3>Das Konzert!</h3>
         </div>
         <div class="panel-body">
-          <p>Ihr habt bock uns Live zu sehen? Am <b>4. Juli</b> sind den ganzen Abend im Kinder-Jugendhaus Krückaupark Elmshorn! Der Eintritt kostet <b>4,99€</b> und Einlass ist um <b>18:30</b> </p>
-          <p> Es wird für alles gesorgt! Getränke und Snacks gibt es im Innenbereich und wem lieber nach etwas Warmes zumute ist, der kann sich draußen am Grillstand satt essen.</p>
+          <p>Ihr habt bock uns Live zu sehen? Am <b>4. Juli</b> sind wir den ganzen Abend im Kinder-Jugendhaus Kr&uuml;ckaupark Elmshorn und spielen f&uuml;r euch unsere besten Lieder! Der Eintritt kostet <b>4,99€</b> an der Abendkasse! Die Karten sind streng limitiert, also sicher euch <a href="reservierung.php">HIER</a> die Karten im vorraus! Das Konzert beginnt um <b>20:00</b> Uhr und der Einlass f&auml;ngt ab <b>18:30</b> Uhr an.</p>
+          <p> Hungrig und durstig vom ganzen Feiern ? Kein Problem, k&uuml;hle Getr&auml;nke und warmes vom Grill stehen f&uuml;r euch bereit!</p>
         </div>
       </div>
       <div class="panel panel-transparent">
         <div class="panel-heading">
-          <h3>Infos</h3>
+          <h3>Unsere Sponsoren</h3>
         </div>
         <div class="panel-body">
           <div class="row">
-            <div class="col-md-6">
-              <h2>Kinder-Jugendhaus Krückaupark Elmshorn</h2>
-              <p>Das Kinder-Jugendhaus Krückaupark Elmshorn ist eine großartige Location für junge Leute. Man kann sich dort nach der Schule oder einfach so am Abend treffen und mit Freunden Zeit verbringen. Es gibt genügend Beschäftigungen wie Tischkicker, Billiard, Fußball und mehr. Außerdem bieten Sie auch tolle Ausfahrten und Events an. <b> Ihr solltet echt mal vorbeischauen. </b>  </p>
+            <div class="col-md-4">
+              <h3>K-J-H-K</h3>
+              <p>Das Kinder-Jugendhaus Kr&uuml;ckaupark Elmshorn ist ein toller Platz f&uuml;r junge Leute. Alle jungedlichen sind herzlich eingeladen in Ihrer Freizeit vorbeizuschauen! Egal ob nach der Schule, nach dem Sport oder einfach so. Es gibt immer gen&uuml;gend Besch&auml;ftigungen und eine riesen menge Spaß! Tischkicker, Billiard, Fußball und noch viel viel mehr wird hier geboten! Aber auch coole Ausfl&uuml;ge oder Events, wie Konzerte, stehen hier immer wieder auf der Tagesordnung! &Uuml;ber Ein Besuch von euch w&uuml;rden wir uns sehr freuen, vielleicht sieht man sich ja mal!</p>
               <p><a class="btn btn-default" href="http://www.elmshorn.de/INTERNET/Kultur-Freizeit/Freizeit/Freizeitangebote-f%C3%BCr-Kinder-und-Jugendliche/Kinder-und-Jugendh%C3%A4user/index.php?La=1&NavID=2054.109&object=tx,1981.5079.1&kat=&kuo=2&sub=0" role="button">Zur Homepage &raquo;</a></p>
             </div>
-            <div class="col-md-6">
-              <h2>Unsere Sponsoren?</h2>
-              <p>Vielen Dank an das Kinder-Jugendhaus Krückaupark Elmshorn für die Bereitstellung der Location und der Snack / Getränke.<br />Ein großes Dankeschön geht auch an Roland Würstchen für den Grillwagen. Unsere weiteren Sponsoren sind die Stadtwerke Elmshorn, Musikschule Elmshorn und Peter Kölln.</p>
+            <div class="col-md-4">
+              <h3>Stadt Elmshorn</h3>
+              <p>Dank der Stadt Elmshorn, sind wir in der Lage unserem gemeinsamen Traum einer eigenen Band mit richtigen Auftritten ein St&uuml;ck n&auml;her gekommen! Durch die Unterst&uuml;tzung der Stadt haben wir es geschafft diesen Auftritt zu planen und durchf&uuml;hren zu k&ouml;nnen! <b>Vielen Dank!</b> </p>
+            </div>
+            <div class="col-md-4">
+              <h3>Musik-Hofer</h3>
+              <p>Musik-Hofer ist ein Patner der Musikfreunde! Dank der freundlichen Untersterst&uuml;tzung des Musikhauses, k&ouml;nnen wir mit professionellem Equipment unseren Auftritt anstreben! Das Musikhaus-Hofer bietet neben dem Verkauf von Instrumenten auch noch die Reparatur und sogar den Verleih dieser an!</p>
+              <p><a class="btn btn-default" href="http://www.musik-hofer.de/" role="button">Zur Homepage &raquo;</a></p>
             </div>
           </div>
         </div>

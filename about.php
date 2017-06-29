@@ -69,10 +69,9 @@
       <div class="panel panel-transparent">
         <div class="panel-heading">
           <h3>Claptrap</h3>
-          <h4>„Rap-Rock zum abgehen“</h4>
         </div>
         <div class="panel-body">
-          <p>Wir sind "Claptrap" und spielen Rap-Rock im Style vom Hollywood Undead und Limp Bizkit. Wir haben unser erstes Album rausgebracht und spielen in der Umgebung unsere Songs.</p><br />
+          <p><h4>Das sind wir...</h4></p>
           <!-- Bandmitglied 1 -->
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="img-circle img-responsive-about img-center" src="img/Artists/Platzhalter200x200.png" alt="Platzhalter">
@@ -87,7 +86,7 @@
             <h3>Klaus Mustermann
               <small>Vocals</small>
             </h3>
-              <p>Seine Stimme verf&uuml;hrt die Zuhörer des öfteren dazu, das Tanzbein mitzuschwingen!</p>
+              <p>Seine Stimme verf&uuml;hrt die Zuh&ouml;rer des &ouml;fteren dazu, das Tanzbein mitzuschwingen!</p>
           </div>
           <!-- Bandmitglied 3 -->
           <div class="col-lg-4 col-sm-6 text-center">
@@ -95,7 +94,7 @@
             <h3>Maria Mustermann
               <small>Drummerrin</small>
             </h3>
-            <p>Mit ihren Drumms lässt sie die Herzen der Fans schneller schlagen!</p>
+            <p>Mit ihren Drumms l&auml;sst sie die Herzen der Fans schneller schlagen!</p>
           </div>
           <!-- Bandmitglied 4 -->
           <div class="col-lg-4 col-sm-6 text-center artist-center-1">
@@ -121,8 +120,9 @@
           <h3>Geschichte</h3>
         </div>
         <div class="panel-body">
-          <h2>Gründung</h2>
-          <p>Wir haben uns 2013 durch die Schulband getroffen. Nach der Schule haben wir uns entschieden weiter als Band zu spielen. Wir haben früh gemerkt, dass wir ein gemeinsame Musik-Interesse haben und haben uns entschieden Rap-Rock zu machen. Zu unseren Vorbildern gehören Bands wie Hollywood Undead, Limp Bizkit und Thousand Foot Krutch. Unsere ersten Konzerte waren in der Schule auf dem Musikabend. Wir hatten recht früh viele Fans. Die meisten natürlich Schulfreunde, aber auch Leute aus anderen Schulen kamen zu unseren Schulkonzerten. Der Vater von (    ) hat ein eigenes Tonstudio. Dies war natürlich perfekt für uns. Also machten wir erst unsere erste LP und dann kamm auch schon die EP. Wir wurden immer bekannte und haben auftritte in Jungendzentren gehabt und unsere größten Erfolge war die Auftritte 2015 beim Rock ' Rose in Uetersen und 2016 auf dem Acker Festival in Kummerfeld.</p>
+          <p>Unsere Band "Claptrap" entstand bereits 2011 durch ein Schulbandprojekt! Doch wir merkten schnell, die Gruppe war für mehr bestimmt, als nur für ein Schulprojekt. Also kamen wir schnell auf die Idee, aus dem Projekt eine richtige Band zu Gründen!</p>
+          <p>Kurz nach unserer Gründung, entschieden wir uns dazu Coverlieder von aktuellen Charts zu singen! Mit dieser Idee war unser erster Schritt zum Erfolg bereits so gut wie getan! Denn nachdem wir uns für unsere Musikrichtung entschieden haben und unsere ersten Lieder perfektioniert hatten, kam bereits der erste Auftitt. Wir hatten uns kurz vorher nämlich bei der "Langen Nacht der Musik", eine schon sehr altes Schulevent, als Künstler beworben und nachdem wir ein kleines Vorspiel gerockt haben, war unser erster Auftritt gesichert!</p>
+          <p>So ging es eine Zeitlang weiter, wir spielten bei den unterschiedlichsten Veranstaltungen unsere Lieder. Doch der Große Traum vom eingen Konzert war bis dahin noch nicht sichtbar! Doch nun haben wir es gewagt, mit brand neuen Liedern und coolen Sponsoren ist es bald soweit! Die erste eigen große Show kann kommen!</p>
         </div>
       </div>
       <!-- Back to Top Button -->
