@@ -140,8 +140,8 @@
               // Anzeigen wenn Session Cookie für falsche Anmeldedaten gesetzt ist
               if(isset($_SESSION['FalscheDaten']))
               {
-          		  echo '<div class="alert alert-danger" role="alert"><strong>Falsche Anmeldedaten!</strong> Bitte versuchen Sie es erneut, mit den richtigen Anmeldedaten.</div>';
-          		  unset($_SESSION['FalscheDaten']);
+                echo '<div class="alert alert-danger" role="alert"><strong>Falsche Anmeldedaten!</strong> Bitte versuchen Sie es erneut, mit den richtigen Anmeldedaten.</div>';
+                unset($_SESSION['FalscheDaten']);
               }
           ?>
           <!-- Anmeldeformular -->
@@ -213,13 +213,13 @@
                 // Tabellenanfang zur Darstellung aller Reservierungen ausgeben
                 echo '
                   <table class="table admintable">
-            		    <tr>
-	            	      <th class="AdminTabelleZelle1">Name</th>
-	            	      <th class="AdminTabelleZelle2">Email</th>
-	            	      <th class="AdminTabelleZelle3">Nachricht</th>
-	            	      <th class="AdminTabelleZelle4">Anzahl</th>
-	            	      <th class="AdminTabelleZelle5">Datum</th>
-	            	      <th class="AdminTabelleZelle6">Löschen</th>
+                    <tr>
+                      <th class="AdminTabelleZelle1">Name</th>
+                      <th class="AdminTabelleZelle2">Email</th>
+                      <th class="AdminTabelleZelle3">Nachricht</th>
+                      <th class="AdminTabelleZelle4">Anzahl</th>
+                      <th class="AdminTabelleZelle5">Datum</th>
+                      <th class="AdminTabelleZelle6">Löschen</th>
                     </tr>
                 ';
                 // Für jede Reservierung folgendes HTML ausgeben mit spezifischen Variablen
@@ -232,14 +232,14 @@
                   $Datum = $Reihen[5];
 
                   echo '
-                  	<tr>
-                  		<td class="AdminTabelleZelle1">'.$Name.'</td>
-                  		<td class="AdminTabelleZelle2">'.$Email.'</td>
-                  		<td class="AdminTabelleZelle3">'.$Nachricht.'</td>
-                  		<td class="AdminTabelleZelle4">'.$KartenAnzahl.'</td>
-                  		<td class="AdminTabelleZelle5">'.$Datum.'</td>
-                  		<td class="AdminTabelleZelle6"><form action="admin.php" method="post" style="display: inline-block;"><button name="Reservierung_Loeschen" value="'.$ID.'" class="btn btn-xs btn-danger">Löschen</button></form></td>
-                  	</tr>
+                    <tr>
+                      <td class="AdminTabelleZelle1">'.$Name.'</td>
+                      <td class="AdminTabelleZelle2">'.$Email.'</td>
+                      <td class="AdminTabelleZelle3">'.$Nachricht.'</td>
+                      <td class="AdminTabelleZelle4">'.$KartenAnzahl.'</td>
+                      <td class="AdminTabelleZelle5">'.$Datum.'</td>
+                      <td class="AdminTabelleZelle6"><form action="admin.php" method="post" style="display: inline-block;"><button name="Reservierung_Loeschen" value="'.$ID.'" class="btn btn-xs btn-danger">Löschen</button></form></td>
+                    </tr>
                   ';
                 }
                 // Tabeller wieder schließen
