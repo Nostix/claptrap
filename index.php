@@ -28,11 +28,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
-		<link rel="icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" />
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-		<script src="js/cookies.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script src="js/cookies.js"></script>
   </head>
   <body>
   <!-- Navigation -->
@@ -49,8 +49,8 @@
           <a class="navbar-brand" href="index.php">Claptrap</a>
         </div>
         <!-- Eigentliche Navigation -->
-		    <div class="collapse navbar-collapse" id="navbar">
-		      <ul class="nav navbar-nav">
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
             <li><a href="about.php">Band</a></li>
             <li><a href="anfahrt.php">Anfahrt</a></li>
             <li><a href="kontakt.php">Kontakt</a></li>
@@ -78,7 +78,7 @@
           <h1 class="Startbereich">Claptrap</h1>
           <h2 class="Startbereich" id="countdown"></h2>
           <script src="js/countdown.js"></script>
-		      <div class="Startbereich">
+          <div class="Startbereich">
             <p>
               <a href="reservierung.php" class="btn Reservierung">Jetzt Karten reservieren!</a>
             </p>
