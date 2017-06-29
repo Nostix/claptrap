@@ -1,3 +1,18 @@
+/********************************************************
+* Dateiname: main.css
+* Autor: Nostix Code
+* letzte Aenderung: 28.06.2017
+* Inhalt: Styling aller Elemente außerhalb von Bootstrap
+*
+* Verwendete Funktionen (aus anderen Dateien):
+*   /
+*
+* Definierte Funktionen:
+*   /
+********************************************************/
+
+/* Allgemeines Styling */
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -10,6 +25,8 @@ body {
 footer {
   color: white;
 }
+
+/* Startseite */
 
 .Besucherzaehler {
   float: right;
@@ -37,6 +54,11 @@ footer {
   font-size: larger;
 }
 
+.countdown {
+  width: 100%;
+  margin: 10px auto;
+}
+
 .Reservierung {
   background: none;
   border: 3px solid #d9534f;
@@ -57,6 +79,16 @@ footer {
 #ScrollFunktion {
   margin-bottom: 75px;
 }
+
+/* Weitere anpassungen von Bootstrap eigenen Elementen für den Bildschirmfüllenden Startbereich der Startseite */
+
+.jumbotron {
+  background: none;
+  position: relative;
+  height: 100vh;
+}
+
+/* Designanpassung des in Bootstrap integrierten Panels */
 
 .panel-transparent {
   margin-top: 40px;
@@ -84,6 +116,8 @@ footer {
   border-bottom-right-radius: 5px;
 }
 
+/* Gästebuch */
+
 .Gaestebuch_Titel {
   margin: 0px auto;
   display: inline-block;
@@ -94,28 +128,33 @@ footer {
   float: right;
 }
 
+/* Über die Band */
+
+.img-responsive-about, {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+/* Reservierung */
+
 .Reservierungstext {
   text-align: center;
 }
 
-.countdown {
-  width: 100%;
-  margin: 10px auto;
+/* Anfahrt */
+
+#map {
+    height: 600px; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
 }
 
-.jumbotron {
-  background: none;
-  position: relative;
-  height: 100vh;
-}
-
-.back-to-top {
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 40px;
-  display:none;
-}
+/* Admin Bereich */
 
 .admintext {
   margin-top: 50px;
@@ -151,6 +190,18 @@ footer {
   width: 10%
 }
 
+/* Back To Top Button */
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  display:none;
+}
+
+/* Responsive Forumlar für Reservierung, Kontakt und Admin Login */
+
 .ResponsiveFormularLinks {
   text-align: center;
   flex: 1;          
@@ -177,7 +228,7 @@ footer {
   flex-wrap: wrap;
 }
 
-/* Makes images fully responsive */
+/* Bilder Responsive machen */
 
 .img-responsive,
 .thumbnail > img,
@@ -190,7 +241,7 @@ footer {
 }
 
 
-/* ------------------- Carousel Styling ------------------- */
+/* Bilderslideshow von Bootstrap anpassung auf der Startseite */
 
 .carousel-inner {
   border-radius: 15px;
@@ -212,6 +263,8 @@ footer {
 .carousel-control.right {
   background-image: none;
 }
+
+/* Anpassungen von einigen Elementen für unterschiedliche Bildschirmgrößen */
 
 @media screen and (min-width: 768px) {
 
@@ -279,52 +332,4 @@ footer {
     max-width: 930px;
   }
 
-}
-
-
-
-/* ----About-Seite---- */
-
-.img-responsive-about, {
-  display: block;
-  width: 80%;
-  height: auto;
-}
-
-.img-center {
-  margin: 0 auto;
-}
-
-/* ----Transparentes Panel---- */
-
-.panel-transparent {
-  margin-top: 40px;
-  background: none;
-  border-color: transparent;
-  color: white;
-}
-
-.panel-transparent .panel-heading{
-  border-color: transparent;
-  background: rgba(122, 130, 136, 0.8)!important;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.panel-transparent .panel-heading h3 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.panel-transparent .panel-body{
-  border-color: transparent;
-  background: rgba(46, 51, 56, 0.8)!important;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-#map {
-    height: 600px; 
-    margin-top: 40px; 
-    margin-bottom: 40px;
 }
