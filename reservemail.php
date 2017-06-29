@@ -65,7 +65,7 @@
     $MeineEmail = 'mail@nostix.de';
     $An = $MeineEmail;
     $Betreff = 'Kartenreservierung von: '.$Name;
-    $EmailNachricht = "Es wurde eine Reservierung gesendet von: ".$Name."\r\n \r\nEmail: ".$Email."\r\n \r\nNachricht: \r\n".$Nachricht;
+    $EmailNachricht = "Es wurde eine Reservierung gesendet von: ".$Name."\r\n \r\nEmail: ".$Email."\r\n \r\nKartenanzahl: ".$Kartenanzahl."\r\n \r\nNachricht: \r\n".$Nachricht;
     mail($An, $Betreff, $EmailNachricht);
     sleep(1);
     // Nach Erfolg, Umleitung
