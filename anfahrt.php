@@ -6,7 +6,7 @@
 * Inhalt: Anfahrt, Google Map
 *
 * Verwendete Funktionen (aus anderen Dateien):
-*   (window).scroll(function (), function initMap()
+*   (window).scroll(function (), $('#back-to-top').click(function), window.cookieconsent.initialise(), function initMap()
 *   
 *
 * Definierte Funktionen:

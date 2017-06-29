@@ -1,3 +1,16 @@
+/********************************************************
+* Dateiname: cookies.js
+* Autor: https://cookieconsent.insites.com/
+* letzte Aenderung: 28.06.2017
+* Inhalt: Cookie Benachrichtigung
+*
+* Verwendete Funktionen (aus anderen Dateien):
+*   /
+*   
+*
+* Definierte Funktionen:
+*   window.cookieconsent.initialise()
+********************************************************/
 window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {

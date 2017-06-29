@@ -6,7 +6,7 @@
 * Inhalt: Kartenreservierung
 *
 * Verwendete Funktionen (aus anderen Dateien):
-*   /
+*   (window).scroll(function (), $('#back-to-top').click(function), window.cookieconsent.initialise()
 *   
 *
 * Definierte Funktionen:

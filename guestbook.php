@@ -6,7 +6,7 @@
 * Inhalt: Gästebuch
 *
 * Verwendete Funktionen (aus anderen Dateien):
-*   (window).scroll(function ()
+*   (window).scroll(function (), $('#back-to-top').click(function), window.cookieconsent.initialise()
 *   
 *
 * Definierte Funktionen:
