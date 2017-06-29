@@ -56,8 +56,10 @@
     <script src="js/cookies.js"></script>
   </head>
   <body>
+  <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
+      <!-- Navigation für Mobile Geräte -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -67,6 +69,7 @@
           </button>
           <a class="navbar-brand" href="index.php">Claptrap</a>
         </div>
+        <!-- Eigentliche Navigation -->
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
             <li><a href="about.php">Band</a></li>
@@ -77,6 +80,7 @@
         </div>
       </div>
     </nav>
+    <!-- Besucherzähler -->
     <div class="Besucherzaehler">
       <img class="Besucherhintergrund" src="img/overlaybesucherzahler.png">
       <?php include ("counter.php"); ?>

@@ -35,7 +35,7 @@
 		<script src="js/cookies.js"></script>
   </head>
   <body>
-<!-- Navigation -->
+  <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
       <!-- Navigation für Mobile Geräte -->
